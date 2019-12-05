@@ -1,0 +1,151 @@
+<ons-page id="warning">
+  <ons-toolbar id="top10">
+    <div class="left">
+      <ons-toolbar-button onclick="openMenu()">
+        <ons-icon icon="md-menu"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+    <div class="center">Warning signs</div>
+      <div class="right">
+          <ons-toolbar-button onclick="loadPage('what.html')">Next</ons-toolbar-button>
+      </div>
+  </ons-toolbar>
+    
+
+    
+    
+                 <ons-row style="margin: 0; padding: 20px;background: black;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #fff; font-size: 26px"><b><span style="font-size: 34px;">How can you recognize early warning signs</span>
+        </b><br><br><span style="color: #fff; font-size: 26px;">If you experience one or more of the following feelings or behaviours, they can be an early warning sign or a problem</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p>
+</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>
+    
+    <ons-row style="margin: 0; padding: 20px; background: #000;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: rgba(255,187,204,0.2);">
+    
+    <p style="color: #ffbbcc; font-size: 26px"><b>Signs
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating or sleeping too much or too little<br><br>
+Pulling away from people and usual activities<br><br>
+Having low or no energy<br><br>
+Feeling numb or like nothing matters<br><br>
+Having unexplained aches and pains<br><br>
+Feeling helpless or hopeless<br><br>
+Smoking or drinking more than usual<br><br>
+Feeling unusually confused, forgetful, on edge, angry, upset, worried, or scared</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #ffbbcc">
+    
+    <p style="color: #ffbbcc; font-size: 26px"><b>&nbsp;
+        </b><br><br><span style="color: #000; font-size: 22px; font-weight: 300;">
+Yelling or fighting with family and friends<br><br>
+Experiencing severe mood swings that cause problems in relationships<br><br>
+Having persistent thoughts and memories you can't get out of your head<br><br>
+Hearing voices or believing things that are not true<br><br>
+Thinking of harming yourself or others<br><br>
+Inability to perform daily tasks like getting to work or school
+        </span>
+</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>
+          
+    
+                   <ons-row style="text-align: center; background-color: #000">  
+<ons-col class="box1" width="100%" style="padding: 40px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 10px 0; background: linear-gradient(to right, #ffcccc 0%, #ffddcc 33%, #ffeecc 66%, #ffffcc 100%);	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;"><b>There is nothing to be ashamed of if you think that you have mental health problem(s). With the right support, you will be fine!</b></p>
+
+    </ons-col>
+
+    </ons-row>    
+        
+    
+    
+            
+
+
+
+    
+           <ons-row style="text-align: center; background: #000; height: 150px" id="trigger111">  
+               
+    </ons-row>
+    
+    
+           <ons-row style="text-align: center; background-color: #000;" id="end111">  
+<ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
+    
+    
+        <ons-fab style="background: transparent; border: 2px solid #fff;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top10'));" position="center bottom">
+<ons-icon icon="md-chevron-up"></ons-icon></ons-fab>
+    
+        <script>
+		// build scene
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger111",
+								triggerHook: 1, // show, when scrolled 10% into view
+											})
+											.setClassToggle("#end111", "end")
+											.addTo(controller);
+</script>
+    
+    
+               <script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}      
+    </script>
+    
+    
+    </ons-col>
+
+               </ons-row>
+
+       
+    
+</ons-page>

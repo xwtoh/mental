@@ -1,0 +1,311 @@
+<ons-page id="page1" style="background-color: #655989;">
+
+           <script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}      
+    </script>
+    
+<ons-fab id="btn1" ripple
+onclick="smoothScroll(document.getElementById('one'));document.getElementById('btn2').style.display = 'none';document.getElementById('btn2').style.display = 'block';" position="bottom right">
+<ons-icon icon="md-chevron-down"></ons-icon>
+</ons-fab>  
+           
+<ons-fab id="btn2" ripple style="display: none" onclick="smoothScroll(document.getElementById('trigger0'));document.getElementById('btn2').style.display = 'none';document.getElementById('btn3').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
+</span></ons-fab>    
+
+<ons-fab id="btn3" ripple style="display: none" onclick="smoothScroll(document.getElementById('trigger1'));document.getElementById('btn3').style.display = 'none';document.getElementById('btn4').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
+</span></ons-fab>       
+    
+<ons-fab id="btn4" ripple style="display: none" onclick="smoothScroll(document.getElementById('trigger10'));document.getElementById('btn4').style.display = 'none';document.getElementById('btn5').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
+</span></ons-fab>    
+    
+<ons-fab id="btn5" ripple style="display: none" onclick="smoothScroll(document.getElementById('last'));document.getElementById('btn5').style.display = 'none';document.getElementById('btn6').style.display = 'block';" position="bottom right" class="fab fab--bottom__left"><span class="fab__icon">
+<ons-icon icon="md-chevron-down" class="ons-icon zmdi zmdi-chevron-down"></ons-icon>
+</span></ons-fab> 
+    
+
+
+        
+  <ons-toolbar style="background-color: #655989; color: #fff">
+      <div class="left" style="background-color: #655989; color: #fff">
+  <ons-back-button></ons-back-button>
+</div>
+    <div class="center" style="background-color: #655989; color: #fff;">What is stress?</div>
+  </ons-toolbar>
+    <div id="zero"></div>
+       <ons-list id="reveal-elements" style="background-color: #ffcebb; text-align: center; width: 100%">
+           
+    
+           <ons-row width="100%">
+               
+                 <img src="title2.png" style="margin: auto; position: fixed; top: 44px; left: 50%; margin-left: -20vh; display: block; z-index: 999; max-height: 40vh;">
+               </ons-row>
+               <script>
+		// topbtnhide
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger",
+								triggerHook: 0, 
+                                offset: 50
+											})
+											.setClassToggle("#btn1,#btn6", "hide")
+                                    		.addIndicators() // add indicators (requires plugin)
+											.addTo(controller);
+</script>
+           
+
+
+               
+               	
+               
+                <ons-row width="100%" id="trigger" style="height: 100vh; background-color: #655989; position: relative;">
+                    
+                    
+ 
+                    
+                    <div id="one" style="position: absolute; top: 30%; height: 10px"></div>
+               
+					<div id="destroybox" class="box1" style="padding: 0; position: absolute; top: 50%; height: 45vh">
+                                                      
+
+                        <ons-col class="box1" width="100%"><p style="font-size: 26px; padding: 0:">is a feeling of</p></ons-col>
+                        <ons-col id="destroy" class="redblink box1"><p style="font-size: 26px; padding: 20px 0; margin: auto;"><b>Abnormal Pressure</b></p></ons-col>					
+               
+               
+               </div>
+					<script>
+						$(function () { // wait for document ready
+							// init controller
+							var controller = new ScrollMagic.Controller({loglevel: 3});
+
+							// build scene
+							var scene = new ScrollMagic.Scene({triggerElement: "#destroybox", triggerHook: 0.5, offset: 0, duration: "55%"})
+                                            .setPin("#destroybox")
+                                            .setClassToggle("#destroybox", "visible") // add class toggle
+											.addTo(controller);
+                                            
+						});
+					</script>
+                    
+
+           </ons-row>
+           
+           <ons-row style="height: 100vh; background-color: #7a9eaf; position: relative;" id="trigger0">
+                
+               
+     
+<ons-row style="position: absolute; top: 0%" id="row10">     
+    <ons-row class="box1" id="reveal000" width="100%" ><p style="font-size: 26px; padding: 20px 0;">can be either</p></ons-row>
+                <ons-col width="50%" class="box1 white" id="reveal0"><p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Good</b><br>
+                   <br>known as Eustress<br>
+                    </p></ons-col>
+    
+                <ons-col width="50%" class="box1 black" id="reveal00"><p style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Bad</b><br>
+                    <br>known as Distress</p></ons-col>
+</ons-row>
+                    
+                    
+    <ons-row style="height: 150px;">&nbsp;</ons-row>
+               					<script>
+							// build scene
+							new ScrollMagic.Scene({
+												triggerElement: "#trigger0",
+												triggerHook: 0.4, // show, when scrolled 10% into view
+												duration: "45%", // hide 10% before exiting view (80% + 10% from bottom)
+												offset: 0 // move trigger to center of element
+											})
+											.setClassToggle("#reveal0,#reveal00,#reveal000", "visible")
+                                            .setPin("#row10")
+											.addTo(controller);
+					</script>
+                    
+
+    
+</ons-row>
+               
+           
+           
+                <ons-row style="height: 60vh; background-color: #ffcebb;" id="trigger1">
+                
+               <ons-col class="box1" id="reveal0000" width="100%"><p style="font-size: 26px; padding: 20px 0; color: #000">can be from different aspects of your day to day life, or your choices.</p></ons-col>
+     
+<ons-row>               
+                <ons-col width="50%" class="box1" id="reveal1"><p class="red" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Academic</b></p></ons-col>
+    
+                <ons-col width="50%" class="box1" id="reveal2"><p class="blue" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Personal</b></p></ons-col>
+</ons-row>
+                    
+    
+<ons-row id="trigger2">      
+                <ons-col width="50%" class="box1" id="reveal3"><p class="orange" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>Work</b></p></ons-col>
+                
+                <ons-col width="50%" class="box1" id="reveal4"><p class="green" style="font-size: 20px; padding: 20px 0; margin: auto; width: auto;"><b>etc.</b></p></ons-col>
+</ons-row>
+                    
+    <ons-row style="height: 150px;">&nbsp;</ons-row>
+               					<script>
+							// build scene
+							new ScrollMagic.Scene({
+												triggerElement: "#trigger1",
+												triggerHook: 0.4, // show, when scrolled 10% into view
+												duration: "45%", // hide 10% before exiting view (80% + 10% from bottom)
+											})
+											.setClassToggle("#reveal1,#reveal2,#reveal3,#reveal4,#reveal0000", "visible")
+                                            .setPin("#trigger1")
+											.addTo(controller);
+					</script>
+                    
+
+    
+</ons-row>
+               
+        <ons-row style="height: 100vh; background-color: #de88a5;">                        
+  
+                                
+<div class="box1" id="trigger10"><p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">can be</p>
+                            
+<div id="animate10" class="box1" style="background: #655989; z-index: 99;">
+    <p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;"><b>overwhelming</b></p>
+
+</div>
+                            
+              <p style="font-size: 26px; padding: 20px 0; margin: auto; width: auto;">for you</p></div>                             
+
+<div class="spacer s2"></div>
+<script>
+		// build scene
+                                new ScrollMagic.Scene({
+								triggerElement: "#trigger10",
+								triggerHook: 0.5, // show, when scrolled 10% into view
+											})
+											.setClassToggle("#animate10,#trigger10", "visible")
+                                            .setPin("#trigger10")
+											.addTo(controller);
+</script>
+                                
+                   
+           </ons-row>
+
+  
+ <ons-row style="height: 100vh; background-color: black; position: relative; z-index: 1">
+
+   <div class="box1" style="padding: 50px 0; position: absolute; top: 45%"><p style="font-size: 26px; padding: 0 10px 50px 10px;">Go back and choose the topic that most interests you</p></div>
+
+     <ons-col style="position: absolute; bottom: 0;">
+
+
+         <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" onclick="smoothScroll(document.getElementById('zero'));document.getElementById('btn5').style.display = 'none';">
+             <p style="font-size: 20px; padding: 10px 20px;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-up"></ons-icon>&nbsp;&nbsp;&nbsp;Back to top</p></div>
+         
+         
+         <div style="margin: auto; border-radius: 30px; color: #fff; margin: auto" id="last" onclick="loadPage('content.html')">
+             <p style="font-size: 20px; padding: 10px 20px;"><ons-icon style="border: 2px solid white; border-radius: 50%; width: 25px; height: 25px" icon="md-chevron-left"></ons-icon>&nbsp;&nbsp;&nbsp;Go back</p></div>
+         
+
+
+     </ons-col>
+
+    <script>    
+            var controller2 = new ScrollMagic.Controller();
+  	// build scenes
+		var revealElement = document.getElementsByClassName("digit2");
+		for (var i=0; i<revealElement.length; i++) { // create a scene for each element
+			new ScrollMagic.Scene({
+								triggerElement: revealElement[i], // y value not modified, so we can use element as trigger as well
+																				 // start a little later
+								triggerHook: 1,
+							})
+							.setClassToggle(revealElement[i], "visible") // add class toggle
+							.addTo(controller);
+		}
+    
+    </script>  
+    
+           </ons-row>
+           
+
+</ons-list>
+  <script>
+        
+        
+  ons.ready(function() {
+  var modal = document.querySelector('ons-modal');
+  modal.show();
+  });
+    function hideModal() {
+  var modal = document.querySelector('ons-modal');
+  modal.hide();
+}
+        
+
+</script> 
+    
+
+    <ons-list id="list" onload="showModal">
+
+</ons-list>
+<ons-modal direction="up" animation="lift" onclick="hideModal()">
+    
+    
+    <ons-fab ripple onclick="hideModal()" position="bottom right">
+<ons-icon icon="md-chevron-down"></ons-icon>
+</ons-fab>  
+    
+  <div class="center" style="text-align: center; background: rgba(0,0,0,0.3); height: 100vh; position: relative">
+      
+      <ons-row>
+          
+          <ons-col>
+    <p class="card__title card--material__title" style="padding: 10vh 100px">
+How to navigate:
+          </p>
+          </ons-col>
+              </ons-row>
+      
+      <ons-row style="padding: 10vh 100px">
+      <p>
+          Scroll down slowly to see the animations, or click on the button the bottom right  
+          to play the animation in succession.
+          </p></ons-row>
+      
+            <ons-row style="padding: 10vh 100px;">
+                <ons-col>
+      <p>
+          Tap or click anywhere to dismiss.
+                    </p></ons-col></ons-row>
+      
+      
+      <ons-button size="30px"
+  icon="md-close" onclick="hideModal()" style="background: transparent; position: absolute; top: 0; right: 0;">
+</ons-button>
+      
+      
+            <img src="arrow.png" style="position: fixed; right: 0;bottom: 0; width: 40%;">   
+
+
+  </div>
+</ons-modal>  
+
+</ons-page>
