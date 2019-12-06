@@ -1202,86 +1202,8 @@ border: 3px solid transparent ;
   height: 100%;
   justify-content: center;
 }
-        #contain2,#contain3{
-  position: absolute;
-  top: 0%;
-  left: 25%;            
-height: 100%;
-width: 100%;
-}
-        
-#contain4{
-  position: absolute;
-  top: 40%;
-  left: 45%;            
-height: 100%;
-width: 100%;
-}
-        
-#contain6{
-  position: absolute;
-  top: 10%;
-  left: 0%;            
-height: 100%;
-width: 100%;
-}
-        
-#contain5{
-  position: absolute;
-  top: 0%;
-  left: 0%;            
-height: 100%;
-width: 100%;
-}
-
-.watch-face {
-  height: 125px;
-  width: 125px;
-  animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
-}
-        
-#contain.hide,#contain2.hide,#contain3.hide,#contain4.hide,#heart.hide {
-display: none;
-}        
-#heart {
-    position: relative;
-    width: 100px;
-    height: 90px;
-    animation: heartbeat 1s infinite;
-    margin:0 auto
-}
 
 
-
-
-@keyframes heartbeat
-{
-  0%
-  {
-    transform: scale( .75 );
-  }
-  20%
-  {
-    transform: scale( 1 );
-  }
-  40%
-  {
-    transform: scale( .75 );
-  }
-  60%
-  {
-    transform: scale( 1 );
-  }
-  80%
-  {
-    transform: scale( .75 );
-  }
-  100%
-  {
-    transform: scale( .75 );
-  }
-}
-        
         
 .containerx {
   width: 120%;
@@ -1295,137 +1217,6 @@ display: none;
   display: inline-block;
 }
 
-.circlex {
-  position: relative;
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
-  padding-top: 100%;
-  background: white;
-}   
-        
-.circlex2 {
-  animation: circlex2 6s infinite ease-out;
-}   
-        @keyframes circlex2{
-  0% {
-    transform: scale(1);
-    background: #fff;
-  }
-  50% {
-    transform: scale(4.5);
-    background: red;
-  }
-  100% {
-    transform: scale(1);
-    background: #fff;
-  }
-}
-
-.circle {
-  height: 125px;
-  width: 125px;
-  border-radius: 50%;
-  position: absolute;
-  mix-blend-mode: screen;
-  transform: translate(0, 0);
-  animation: center 6s infinite;
-}
-
-.circle:nth-child(odd) {
-  background: #61bea2;
-}
-
-.circle:nth-child(even) {
-  background: #529ca0;
-}
-
-.circle:nth-child(1) {
-  animation: circle-1 4s ease alternate infinite;
-}
-
-.circle:nth-child(2) {
-  animation: circle-2 4s ease alternate infinite;
-}
-
-.circle:nth-child(3) {
-  animation: circle-3 4s ease alternate infinite;
-}
-
-.circle:nth-child(4) {
-  animation: circle-4 4s ease alternate infinite;
-}
-
-.circle:nth-child(5) {
-  animation: circle-5 4s ease alternate infinite;
-}
-
-.circle:nth-child(6) {
-  animation: circle-6 4s ease alternate infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(.15) rotate(180deg);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes circle-1 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-35px, -50px);
-  }
-}
-
-@keyframes circle-2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(35px, 50px);
-  }
-}
-
-@keyframes circle-3 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-60px, 0);
-  }
-}
-
-@keyframes circle-4 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(60px, 0);
-  }
-}
-
-@keyframes circle-5 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-35px, 50px);
-  }
-}
-
-@keyframes circle-6 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(35px, -50px);
-  }
-}
         .skew{
             transform: matrix(1,.2,0,1,0,0);
         }
@@ -1552,7 +1343,7 @@ display: none;
     .small{
         display: none;
     }
-        #large1, #large2, #large3, #large4, #large5, #large6,#large7,#large8, #large9
+        #large1, #large2, #large3, #large4, #large5, #large6, #large7, #large8, #large9
         {
         position: relative;
         transition: 0.5s;
@@ -1605,15 +1396,7 @@ display: none;
         transition: 0.3s;
         }
         
-        
-  input#later.time {
-   
-}
-        
-  input#now.time {
-
-}     
-        .image{
+    .image{
             padding: 0 40px;
         }      
         .full{
@@ -1661,92 +1444,6 @@ display: none;
   top: 0%;
 }
     
-    
-    .bubble {
-  animation: expand 4s ease-in-out infinite;
-  border-radius: 50%;
-  display: inline-block;
-  transform-origin: center center;
-  margin: 0 3px;
-  width: 20px;
-  height: 20px;
-}
-
-.bubble:nth-child(1) {
-  background: #27ae60;
-     bottom: 5%;
-    left: 0;
-position: absolute;
-}
-
-.bubble:nth-child(2) {
-  animation-delay: 500ms;
-  background: #f1c40f;
-  bottom: 10%;
-    left: 5%;
-position: absolute;
-  margin: 10px;
-  height: 25px;
-  width: 25px;
-}
-
-.bubble:nth-child(3) {
-  animation-delay: 1000ms;
-  background: #e67e22;
-  bottom: 15%;
-    left: 10%;
-position: absolute;
-  margin: 20px;
-  height: 30px;
-  width: 30px;
-}
-
-.bubble:nth-child(4) {
-  animation-delay: 1500ms;
-  background: #2980b9;
-  bottom: 20%;
-    left: 10%;
-position: absolute;
-  margin: 50px;
-  height: 40px;
-  width: 40px;
-}
-    
-    #heart:before,
-#heart:after {
-    position: absolute;
-    content: "";
-    left: 50px;
-    top: 20px;
-    width: 50px;
-    height: 80px;
-    background: #fff;
-    -moz-border-radius: 50px 50px 0 0;
-    border-radius: 50px 50px 0 0;
-    -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
-       -moz-transform-origin: 0 100%;
-        -ms-transform-origin: 0 100%;
-         -o-transform-origin: 0 100%;
-            transform-origin: 0 100%;
-}
-#heart:after {
-    left: 0;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: 100% 100%;
-       -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100%;
-         -o-transform-origin: 100% 100%;
-            transform-origin :100% 100%;
-}
 
     
   .full2, .half, .third, .twothird {
@@ -1834,7 +1531,7 @@ position: absolute;
     }
     
     .mobileheight{
-        max-height: 20vh;
+        height: 20vh;
         overflow: hidden;
     }
     .large{
@@ -1875,30 +1572,25 @@ position: absolute;
 
   <ons-page>
     <ons-list>
-      <ons-list-item onclick="document.querySelector('#navigator').resetToPage('home.html');">
+      <ons-list-item onclick="loadPage('home.html')">
         Home
       </ons-list-item>
-       <ons-list-item onclick="loadPage('common.html')">
-        Common signs of stress
+       <ons-list-item onclick="loadPage('gad.html')">
+        Generalised Anxiety Disorder
       </ons-list-item> 
-           <ons-list-item onclick="loadPage('what.html')">
-       What can I do
+           <ons-list-item onclick="loadPage('panic.html')">
+       Panic Disorder &amp; Attack
       </ons-list-item> 
-    <ons-list-item onclick="loadPage('gallery.html')">
-       Good &amp; Bad Stress
+    <ons-list-item onclick="loadPage('ocd.html')">
+     OCD
       </ons-list-item>     
-    <ons-list-item onclick="loadPage('longshort.html')">
-      Long &amp; Short term stress
+    <ons-list-item onclick="loadPage('depression.html')">
+      Depression
       </ons-list-item> 
-        <ons-list-item onclick="loadPage('locuscontrol.html')">
-    The Locus of Control
+        <ons-list-item onclick="loadPage('tips.html')">
+   Eating Disorders
       </ons-list-item> 
-            <ons-list-item onclick="loadPage('perspectives.html')">
-   A different perspective on stress
-      </ons-list-item> 
-            <ons-list-item onclick="loadPage('tips.html')">
-      Tips to handle stress
-      </ons-list-item> 
+
         
     </ons-list>
   </ons-page>
