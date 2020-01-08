@@ -1,4 +1,20 @@
 <ons-page id="ocd">
+    
+    <script>
+        
+                var prev = function() {
+  var carousel = document.getElementById('carousel');
+  carousel.prev();
+};
+
+var next = function() {
+  var carousel = document.getElementById('carousel');
+  carousel.next();
+};
+      
+        
+    </script>
+    
   <ons-toolbar id="top16">
     <div class="left">
 <ons-back-button></ons-back-button>
@@ -90,7 +106,7 @@ Other symptoms include trembling, feeling like you can't breathe, being afraid y
     <p style="color: #fff; font-size: 26px"><b>
         </b><span style="color: #000; font-size: 22px; font-weight: 300;">
 If you feel an onset of a panic attack, start focusing on your breathing.<br><br>
-To slow down your body’s reaction to anxiety, practice some deep breathing. <br><br>
+To slow down your body’s reaction to anxiety, practise some deep breathing. <br><br>
 If you are not sure how to do proper breathing, there are phone apps and meditation videos available that can help you through.
         </span>
 
@@ -233,9 +249,15 @@ If panic attacks are keeping you from living the life you want, don’t be afrai
       
 
     </div></ons-row>
- 
     
-            <ons-row style="margin: 0; padding: 20px; background: #000;">  
+    <ons-row style="position: relative; background: #000; padding: 20px;">     
+    
+
+    
+    <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="padding: 0 0 0px 0; margin: 0 40px">
+        
+
+    <ons-carousel-item style="padding: 0px">
 <div class="box1 full" style="padding: 0; font-size: 22px; background: #ff7e67;">
     
     <p style="color: #fff; font-size: 26px"><b>Acknowledge 5 THINGS around you that you can SEE.
@@ -243,6 +265,10 @@ If panic attacks are keeping you from living the life you want, don’t be afrai
     Maybe it is a clock on the wall, carpet on the floor, a table or chair, clouds moving past, or a nearby tree. However big or small, recognize 5 items you can see with your eyes.</span>
 </p>
     </div>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
                 
     <div class="box1 full" style="padding: 0; font-size: 22px; background: #ff7e67;">
     
@@ -251,7 +277,10 @@ If panic attacks are keeping you from living the life you want, don’t be afrai
    Maybe it is your computer at work, the chair you are sitting on, your legs or hair, or your wallet or purse. Recognize 4 items you can feel with your hands or body.</span>
 </p>
     </div>
-                
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
     <div class="box1 full" style="padding: 0; font-size: 22px; background: #ff7e67;">
     
     <p style="color: #fff; font-size: 26px"><b>Acknowledge 3 THINGS around you that you can HEAR.
@@ -259,8 +288,10 @@ If panic attacks are keeping you from living the life you want, don’t be afrai
    Maybe it is the sound of people talking or walking, the laughter of children, birds chirping. Use your fine tuning and see if you can hear ambient sounds you may not normally tune into – the hum of fans or the AC, clocks ticking, cars going by. Name 3 things that are audible to you.</span>
 </p>
     </div>
+    </ons-carousel-item>
+        
 
-                    
+    <ons-carousel-item style="padding: 0px">
     <div class="box1 full" style="padding: 0; font-size: 22px; background: #ff7e67;">
     
     <p style="color: #fff; font-size: 26px"><b>Acknowledge 2 THINGS around you that you can SMELL.
@@ -268,7 +299,9 @@ If panic attacks are keeping you from living the life you want, don’t be afrai
    This one may be tricky if you are not in a stimulating environment, so if you cannot automatically sniff something out, walk nearby to find a scent. You might walk to a bathroom to smell soap, outside to smell something in nature, lean over and smell a pillow on the couch, a pencil on the desk, or check to see how your deodorant is working today. Whatever it may be, take in the smells around you.</span>
 </p>
     </div>
-                
+    </ons-carousel-item>
+
+   <ons-carousel-item style="padding: 0px">
         <div class="box1 full" style="padding: 0; font-size: 22px; background: #ff7e67;">
     
     <p style="color: #fff; font-size: 26px"><b>Acknowledge 1 THING that you can TASTE.
@@ -277,9 +310,21 @@ If panic attacks are keeping you from living the life you want, don’t be afrai
 </p>
     </div>
                
+    </ons-carousel-item>
+
+    
+  </ons-carousel>
+     
+            
+                         <ons-fab style="background: #000; border: 2px solid #fff; top: 40%" modifier="mini" onclick="prev()" position="bottom left">
+        <ons-icon style="color: #fff" icon="md-chevron-left"></ons-icon>
+      </ons-fab>
+              <ons-fab style="background: #000; border: 2px solid #fff; top: 40%" modifier="mini" onclick="next()" position="bottom right">
+        <ons-icon style="color: #fff" icon="md-chevron-right"></ons-icon>
+      </ons-fab>
+
     </ons-row>
-    
-    
+
            
         <ons-row style="margin: 0; padding: 20px; background: #000;">  
 <div class="box1 half left10" style="padding: 0; font-size: 22px;">

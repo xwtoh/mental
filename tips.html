@@ -16,17 +16,70 @@
 
 
             <script>
+ 
                 
-         document.addEventListener('init', function(event) {
-  var page = event.target;
+        var prev10 = function() {
+  var carousel10 = document.getElementById('carousel-2');
+  carousel10.prev();
+};
 
-  if (page.id === 'tips') {
-    window.onresize = function() {
-          document.querySelector('#navigator').replacePage('tips.html',{animation: 'none'},{refresh: true});
+var next10 = function() {
+  var carousel10 = document.getElementById('carousel-2');
+  carousel10.next();
+};                
 
-    };
-  } 
-});
+        var prev0 = function() {
+  var carousel0 = document.getElementById('carousel-1');
+  carousel0.prev();
+};
+
+var next0 = function() {
+  var carousel0 = document.getElementById('carousel-1');
+  carousel0.next();
+};         
+                
+            var prev = function() {
+  var carousel = document.getElementById('carousel');
+  carousel.prev();
+};
+
+var next = function() {
+  var carousel = document.getElementById('carousel');
+  carousel.next();
+};
+                
+        var prev2 = function() {
+  var carousel2 = document.getElementById('carousel2');
+  carousel2.prev();
+};
+
+var next2 = function() {
+  var carousel2 = document.getElementById('carousel2');
+  carousel2.next();
+};
+     
+        var prev3 = function() {
+  var carousel3 = document.getElementById('carousel3');
+  carousel3.prev();
+};
+
+var next3 = function() {
+  var carousel3 = document.getElementById('carousel3');
+  carousel3.next();
+};
+    
+        var prev4 = function() {
+  var carousel4 = document.getElementById('carousel4');
+  carousel4.prev();
+};
+
+var next4 = function() {
+  var carousel4 = document.getElementById('carousel4');
+  carousel4.next();
+};
+     
+                  
+                
             </script>
             
 <ons-row style="margin: 0; padding: 20px;background: #000;">  
@@ -65,9 +118,8 @@
     
     <p style="color: #fff; font-size: 26px"><b>
         </b><span style="color: #000; font-size: 22px; font-weight: 300;">
-People with eating disorders typically become pre-occupied with food and their body weight.<br>
-People with eating disorders tend to be perfectionists with low self-esteem and are extremely critical of themselves and their bodies.<br>
-An intense fear of gaining weight and of being fat may become all-pervasive.<br>
+&#8226;&nbsp;Those with eating disorders typically become pre-occupied with food and their body weight, and tend to be perfectionists with low self-esteem and are extremely critical of themselves and their bodies.<br>
+&#8226;&nbsp;An intense fear of gaining weight and of being fat may become all-pervasive.<br><br>
 In early stages, one may often deny that they have a problem.<br>
 Eating disturbances may include inadequate or excessive food intake which can ultimately damage an individual’s well-being.
         </span>
@@ -87,10 +139,554 @@ Eating disturbances may include inadequate or excessive food intake which can ul
     
     <p style="font-size: 26px; padding: 10px 0; color: #fff;"><b>The most critical and common eating disorders are: <i>anorexia nervosa</i>, <i>bulimia</i> and <i>binge eating disorder</i>.</b></p>
 
-    </ons-col>
+    </ons-col>               
 
-    </ons-row>    
+    </ons-row>  
             
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel-2" style="padding: 0 0 0px 0; margin: 0; width: 100%;">
+        
+
+    <ons-carousel-item style="padding: 0px;  width: 100%">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #994b3d; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating disorders <b>can affect any gender</b>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #994b3d"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #994b3d; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating disorders only affect young women.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #994b3d"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #994b3d"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #994b3d; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating disorders <b>can affect any gender</b>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #994b3d"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+                   
+            
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel-1" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #cc6452; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating a large amount of food then purging is a sign of <b>Bulimia</b>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next0()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #cc6452"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #cc6452; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating a large amount of food then purging it is a sign of Anorexia.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev0()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #cc6452"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next0()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #cc6452"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #cc6452; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating a large amount of food then purging is a sign of <b>Bulimia</b>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev0()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #cc6452"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+                   
+     
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff7e67; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Binge-eating means eating a large amount of food within a certain period of time. Binge-eaters eat even when they are not hungry. They often eat until uncomfortably full. Binge-eaters do not purge after overeating. </span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff7e67; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Binge Eating disorder is when a person consumes of large amounts rapidly of food while feeling a loss of control.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff7e67; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Binge-eating means eating a large amount of food within a certain period of time. Binge-eaters eat even when they are not hungry. They often eat until uncomfortably full. Binge-eaters do not purge after overeating.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+            
+    
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel2" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff9785; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">They usually have poor body image. They imagine physical defects or a minor defect that others often cannot see or notice.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next2()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff9785"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff9785; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">Inaccurately seeing or experiencing your body can be called <i>body image distortion</i>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev2()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next2()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff9785; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">They usually have poor body image.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev2()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+            
+            
+    
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel3" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffb1a3; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia are obsessed with being thin. They often develop peculiar eating habits. They may pick out just a few foods to eat. Or they may eat foods in small quantities or carefully weigh foods. They may use diet pills and laxatives to lose weight. They check their weight over and over again. They often exercise more than normal to control their weight.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next3()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffb1a3; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia nervosa see themselves as overweight even though they are dangerously thin.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev3()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next3()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffb1a3; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia are obsessed with being thin. They often develop peculiar eating habits. They may pick out just a few foods to eat. Or they may eat foods in small quantities or carefully weigh foods. They may use diet pills and laxatives to lose weight. They check their weight over and over again. They often exercise more than normal to control their weight.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev3()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+            
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel4" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffcbc2; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia are obsessed with being thin. They often develop peculiar eating habits. They may pick out just a few foods to eat. Or they may eat foods in small quantities or carefully weigh foods. They may use diet pills and laxatives to lose weight. They check their weight over and over again. They often exercise more than normal to control their weight.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next4()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffcbc2; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia nervosa see themselves as overweight even though they are dangerously thin.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev4()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next4()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffcbc2; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia are obsessed with being thin. They often develop peculiar eating habits. They may pick out just a few foods to eat. Or they may eat foods in small quantities or carefully weigh foods. They may use diet pills and laxatives to lose weight. They check their weight over and over again. They often exercise more than normal to control their weight.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev4()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
             
             
             
@@ -125,9 +721,10 @@ The risk of death is highest in individuals with this disease.
     <p style="color: #fff; font-size: 26px"><b>Signs &amp; Symptoms</b>
         </p>
 
-    <div class="large">
+    <div class="small">
             <script>
        function rotate(){
+    $('#large1').toggleClass('expand');
     $('#rotate').toggleClass('rotated');
 $('#img,#more,#contain').toggleClass('hide'); 
 }
@@ -135,7 +732,7 @@ $('#img,#more,#contain').toggleClass('hide');
         <div class="tip" id="rotate" onclick="rotate()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more">more</p>
     </div>
     
-        <div class="small">
+        <div class="large">
             <script>
         function srotate(){
 $('#large1').toggleClass('expand');
@@ -149,15 +746,15 @@ $('#img,#contain,#smore').toggleClass('hide');
     
     </div>
                
-    <div id="large1" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #553c8b;" onclick="sclose1()">
+    <div id="large1" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);" onclick="sclose1()">
         
-   <div id="img" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #ccc1ff;">
-<div class="contain">
-    <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Warning" overflow="hidden" height="100px" width="100px"><path d="M90.6 80 51.5 12C50 9.3 46.1 9.3 44.6 12L5.4 80C3.9 82.7 5.8 86 8.9 86L48 86 87.1 86C90.2 86 92.1 82.7 90.6 80ZM45 28 51 28 51 63 45 63 45 28ZM48 77C45.2 77 43 74.8 43 72 43 69.2 45.2 67 48 67 50.8 67 53 69.2 53 72 53 74.8 50.8 77 48 77Z"/></svg>  </div>
         
+<div style="background: #553c8b; margin: 0 auto; border-radius: 30px; width: 90%;">        
+        
+   <div id="img" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #553c8b;">
         </div>
 
-    <p class="small" style="color: #fff;"><b>Signs &amp; Symptoms</b>
+    <p style="color: #fff;"><b>Signs &amp; Symptoms</b>
     </p>
         
     <p style="color: #fff">Dramatic weight loss<br><br>
@@ -180,9 +777,9 @@ $('#img,#more').toggleClass('hide');
   }
         </script>
        
-        <div class="small">
+        <div>
             <div class="tip rotated" id="sclose1"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
-
+        </div>
     </div>
                
     </div>
@@ -201,6 +798,7 @@ $('#img,#more').toggleClass('hide');
     <div class="large">
             <script>
     function rotate2(){
+        $('#large2').toggleClass('expand');
     $('#rotate2').toggleClass('rotated');
 $('#img2,#more2').toggleClass('hide');   
   }
@@ -223,16 +821,15 @@ $('#img2').toggleClass('hide');
     
     </div>
                
-    <div id="large2" onclick="sclose2()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #553c8b;">
+    <div id="large2" onclick="sclose2()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
         
-            <div id="img2" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #ccc1ff;">
-                
-       <div class="contain">                     
-           <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Help_LTR" overflow="hidden" height="100px" width="100px" ><path d="M48 10C27 10 10 27 10 48 10 69 27 86 48 86 69 86 86 69 86 48 86 27 69 10 48 10ZM48 76C45.2 76 43 73.8 43 71 43 68.2 45.2 66 48 66 50.8 66 53 68.2 53 71 53 73.8 50.8 76 48 76ZM51 52.8C51 55.4 51 62 51 62L45 62 45 47 48 47C54.7 47 59 43.1 59 37 59 30.7 54.3 26 48 26 41.1 26 37 30.1 37 37L31 37C31 26.8 37.8 20 48 20 57.5 20 65 27.5 65 37 65 45.5 59.4 51.6 51 52.8Z"/></svg>    </div>
+        <div style="background: #553c8b; margin: 0 auto; border-radius: 30px; width: 90%;">  
+        
+            <div id="img2" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #553c8b;">
                 
      </div>
 
-        <p class="small" style="color: #fff;"><b>Self-help Tips</b></p>
+        <p style="color: #fff;"><b>Self-help Tips</b></p>
     <p style="color: #fff"><b>Admit you have a problem</b><br> The first step in anorexia recovery is admitting that your relentless pursuit of thinness is out of your control and acknowledging the physical and emotional damage that you’ve suffered because of it.
 <br><br>
                 
@@ -257,11 +854,11 @@ $('#img2,#more2').toggleClass('hide');
   }
         </script>
        
-        <div class="small">
+        <div>
             <div class="tip rotated" id="sclose2"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
-               
+    </div>   
     </div>
     </ons-row>        
             
@@ -294,6 +891,7 @@ Bulimia can have injuring effects, such as gastrointestinal problems, severe de
     <div class="large">
             <script>
      function rotate3(){
+     $('#large3').toggleClass('expand');
     $('#rotate3').toggleClass('rotated');
 $('#img3,#more3').toggleClass('hide');   
   }
@@ -315,16 +913,14 @@ $('#img3').toggleClass('hide');
     
     </div>
                
-    <div id="large3" onclick="sclose3()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #232020;">
+    <div id="large3" onclick="sclose3()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
         
-   <div id="img3" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #ff7315;">
-<div class="contain">
-    <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Warning" overflow="hidden" height="100px" width="100px"><path fill="#fff" d="M90.6 80 51.5 12C50 9.3 46.1 9.3 44.6 12L5.4 80C3.9 82.7 5.8 86 8.9 86L48 86 87.1 86C90.2 86 92.1 82.7 90.6 80ZM45 28 51 28 51 63 45 63 45 28ZM48 77C45.2 77 43 74.8 43 72 43 69.2 45.2 67 48 67 50.8 67 53 69.2 53 72 53 74.8 50.8 77 48 77Z"/></svg>  </div>
+    <div style="background: #3a3535; margin: 0 auto; border-radius: 30px; width: 90%;">      
         
- 
+   <div id="img3" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #3a3535;">
         </div>
 
-    <p class="small" style="color: #fff;"><b>Signs &amp; Symptoms</b>
+    <p style="color: #fff;"><b>Signs &amp; Symptoms</b>
     </p>
         
     <p style="color: #fff">Being preoccupied with your body shape and weight<br><br>
@@ -347,11 +943,11 @@ $('#img3,#more3').toggleClass('hide');
   }
         </script>
        
-        <div class="small">
+        <div>
             <div class="tip rotated" id="sclose3"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
-               
+    </div>          
     </div>
     </ons-row>        
                 
@@ -369,6 +965,7 @@ $('#img3,#more3').toggleClass('hide');
     <div class="large">
             <script>
 function rotate4(){
+    $('#large4').toggleClass('expand');
     $('#rotate4').toggleClass('rotated');
 $('#img4,#more4').toggleClass('hide');   
   }
@@ -390,21 +987,17 @@ $('#img4').toggleClass('hide');
     
     </div>
                
-    <div id="large4" onclick="sclose4()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #232020;">
+    <div id="large4" onclick="sclose4()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
+        <div style="background: #3a3535; margin: 0 auto; border-radius: 30px; width: 90%;">  
         
-   <div id="img4" class="box1 half right3" style="padding: 0; font-size: 22px; height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #ff7315;">
-              <div class="contain">                     
-           <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Help_LTR" overflow="hidden" height="100px" width="100px" ><path fill="#fff" d="M48 10C27 10 10 27 10 48 10 69 27 86 48 86 69 86 86 69 86 48 86 27 69 10 48 10ZM48 76C45.2 76 43 73.8 43 71 43 68.2 45.2 66 48 66 50.8 66 53 68.2 53 71 53 73.8 50.8 76 48 76ZM51 52.8C51 55.4 51 62 51 62L45 62 45 47 48 47C54.7 47 59 43.1 59 37 59 30.7 54.3 26 48 26 41.1 26 37 30.1 37 37L31 37C31 26.8 37.8 20 48 20 57.5 20 65 27.5 65 37 65 45.5 59.4 51.6 51 52.8Z"/></svg>    </div>
-                
+   <div id="img4" class="box1 half right3" style="padding: 0; font-size: 22px; height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #3a3535;">
 
-
-        
         </div>
 
-    <p class="small" style="color: #fff;"><b>Self-help Tips</b>
+    <p style="color: #fff;"><b>Self-help Tips</b>
     </p>
         
-    <p style="color: #fff"><b>Learn about bulimia</b><br><br>Education about your condition can empower you and motivate you to stick to your recovery plan.<br><br>
+    <p style="color: #fff"><b>Learn about bulimia</b><br><br>Education about your condition can empower you and motivate you to stick to your recovery plan.<br><br> 
 
         <b>Get the right nutrition</b><br><br>If you aren't eating well or you're frequently purging, it's likely your body isn't getting all of the nutrients it needs. Talk to your primary care provider or dietitian about appropriate vitamin and mineral supplements. <br>
 However, getting most of your vitamins and minerals from food is typically recommended.
@@ -433,11 +1026,11 @@ $('#img4,#more4').toggleClass('hide');
   }
         </script>
        
-        <div class="small">
+        <div>
             <div class="tip rotated" id="sclose4"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
+    </div>           
     </div>
-               
     </div>
     </ons-row>   
             
@@ -475,6 +1068,7 @@ Unlike bulimia, however, there are no regular attempts to “make up” for the
     <div class="large">
             <script>
 function rotate5(){
+$('#large5').toggleClass('expand');
     $('#rotate5').toggleClass('rotated');
 $('#img5,#more5').toggleClass('hide');   
   }
@@ -496,15 +1090,15 @@ $('#img5').toggleClass('hide');
     
     </div>
                
-    <div id="large5" onclick="sclose5()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #39375b;">
+    <div id="large5" onclick="sclose5()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
         
-   <div id="img5" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #f5b0cb;">
-<div class="contain">
-    <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Warning" overflow="hidden" height="100px" width="100px"><path d="M90.6 80 51.5 12C50 9.3 46.1 9.3 44.6 12L5.4 80C3.9 82.7 5.8 86 8.9 86L48 86 87.1 86C90.2 86 92.1 82.7 90.6 80ZM45 28 51 28 51 63 45 63 45 28ZM48 77C45.2 77 43 74.8 43 72 43 69.2 45.2 67 48 67 50.8 67 53 69.2 53 72 53 74.8 50.8 77 48 77Z"/></svg>  </div>
+        <div style="background: #39375b; margin: 0 auto; border-radius: 30px; width: 90%;">  
+        
+   <div id="img5" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #39375b;">
 
         </div>
 
-    <p class="small" style="color: #fff;"><b>Signs &amp; Symptoms</b>
+    <p style="color: #fff;"><b>Signs &amp; Symptoms</b>
     </p>
         
     <p style="color: #fff">Continually eating even when full<br><br>
@@ -525,12 +1119,12 @@ $('#img5,#more5').toggleClass('hide');
   }
         </script>
        
-        <div class="small">
+        <div>
             <div class="tip rotated" id="sclose5"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
                
-    </div>
+    </div></div>
     </ons-row>        
                 
 
@@ -546,6 +1140,7 @@ $('#img5,#more5').toggleClass('hide');
     <div class="large">
             <script>
 function rotate6(){
+    $('#large6').toggleClass('expand');
     $('#rotate6').toggleClass('rotated');
 $('#img6,#more6').toggleClass('hide');   
   }
@@ -567,14 +1162,16 @@ $('#img6').toggleClass('hide');
     
     </div>
                
-    <div id="large6" onclick="sclose6()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #39375b;">
+    <div id="large6" onclick="sclose6()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
         
-   <div id="img6" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #f5b0cb;">
-       <div class="contain">                     
-           <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Help_LTR" overflow="hidden" height="100px" width="100px" ><path d="M48 10C27 10 10 27 10 48 10 69 27 86 48 86 69 86 86 69 86 48 86 27 69 10 48 10ZM48 76C45.2 76 43 73.8 43 71 43 68.2 45.2 66 48 66 50.8 66 53 68.2 53 71 53 73.8 50.8 76 48 76ZM51 52.8C51 55.4 51 62 51 62L45 62 45 47 48 47C54.7 47 59 43.1 59 37 59 30.7 54.3 26 48 26 41.1 26 37 30.1 37 37L31 37C31 26.8 37.8 20 48 20 57.5 20 65 27.5 65 37 65 45.5 59.4 51.6 51 52.8Z"/></svg>    </div>
+        
+    <div style="background: #39375b; margin: 0 auto; border-radius: 30px; width: 90%;">  
+    
+        
+   <div id="img6" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #39375b">
         </div>
 
-    <p class="small" style="color: #fff;"><b>Self-help Tip 1</b>
+    <p style="color: #fff;"><b>Self-help Tip 1</b>
     </p>
         
         <p style="color: #fff"><b>Develop a healthier relationship with food</b><br><br>
@@ -598,12 +1195,12 @@ $('#img6,#more6').toggleClass('hide');
   }
         </script>
        
-        <div class="small">
+        <div>
             <div class="tip rotated" id="sclose6"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
                
-    </div>
+    </div></div>
     </ons-row>        
                 
             
@@ -620,6 +1217,7 @@ $('#img6,#more6').toggleClass('hide');
     <div class="large">
             <script>
 function rotate7(){
+$('#large7').toggleClass('expand');
     $('#rotate7').toggleClass('rotated');
 $('#img7,#more7').toggleClass('hide');   
   }
@@ -641,14 +1239,15 @@ $('#img7').toggleClass('hide');
     
     </div>
                
-    <div id="large7" onclick="sclose7()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #39375b;">
+    <div id="large7" onclick="sclose7()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
         
-   <div id="img7" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #f5b0cb;">
-       <div class="contain">                     
-           <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Help_LTR" overflow="hidden" height="100px" width="100px" ><path d="M48 10C27 10 10 27 10 48 10 69 27 86 48 86 69 86 86 69 86 48 86 27 69 10 48 10ZM48 76C45.2 76 43 73.8 43 71 43 68.2 45.2 66 48 66 50.8 66 53 68.2 53 71 53 73.8 50.8 76 48 76ZM51 52.8C51 55.4 51 62 51 62L45 62 45 47 48 47C54.7 47 59 43.1 59 37 59 30.7 54.3 26 48 26 41.1 26 37 30.1 37 37L31 37C31 26.8 37.8 20 48 20 57.5 20 65 27.5 65 37 65 45.5 59.4 51.6 51 52.8Z"/></svg>    </div>
+    <div style="background: #39375b; margin: 0 auto; border-radius: 30px; width: 90%;">  
+    
+        
+   <div id="img7" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #39375b;">
         </div>
 
-    <p class="small" style="color: #fff;"><b>Self-help Tip 2</b>
+    <p style="color: #fff;"><b>Self-help Tip 2</b>
     </p>
         
         <p style="color: #fff"><b>Find better ways to feed your feelings</b><br><br>
@@ -670,12 +1269,12 @@ $('#img7,#more7').toggleClass('hide');
   }
         </script>
        
-        <div class="small">
+        <div>
             <div class="tip rotated" id="sclose7"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
                
-    </div>
+    </div></div>
     </ons-row>        
                 
 
@@ -691,6 +1290,7 @@ $('#img7,#more7').toggleClass('hide');
     <div class="large">
             <script>
 function rotate8(){
+$('#large8').toggleClass('expand');
     $('#rotate8').toggleClass('rotated');
 $('#img8,#more8').toggleClass('hide');   
   }
@@ -712,14 +1312,15 @@ $('#img8').toggleClass('hide');
     
     </div>
                
-    <div id="large8" onclick="sclose8()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #39375b;">
+    <div id="large8" onclick="sclose8()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
         
-   <div id="img8" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #f5b0cb;">
-       <div class="contain">                     
-           <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Help_LTR" overflow="hidden" height="100px" width="100px" ><path d="M48 10C27 10 10 27 10 48 10 69 27 86 48 86 69 86 86 69 86 48 86 27 69 10 48 10ZM48 76C45.2 76 43 73.8 43 71 43 68.2 45.2 66 48 66 50.8 66 53 68.2 53 71 53 73.8 50.8 76 48 76ZM51 52.8C51 55.4 51 62 51 62L45 62 45 47 48 47C54.7 47 59 43.1 59 37 59 30.7 54.3 26 48 26 41.1 26 37 30.1 37 37L31 37C31 26.8 37.8 20 48 20 57.5 20 65 27.5 65 37 65 45.5 59.4 51.6 51 52.8Z"/></svg>    </div>
+        <div style="background: #39375b; margin: 0 auto; border-radius: 30px; width: 90%;">  
+
+        
+   <div id="img8" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #39375b;">
         </div>
 
-    <p class="small" style="color: #fff;"><b>Self-help Tip 3</b>
+    <p style="color: #fff;"><b>Self-help Tip 3</b>
     </p>
         
         <p style="color: #fff"><b>Take back control of cravings</b><br><br>
@@ -739,11 +1340,11 @@ $('#img8,#more8').toggleClass('hide');
   }
         </script>
        
-        <div class="small">
+        <div>
             <div class="tip rotated" id="sclose8"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
     </div>
-               
+    </div>
     </div>
     </ons-row>   
             
@@ -761,6 +1362,7 @@ $('#img8,#more8').toggleClass('hide');
     <div class="large">
             <script>
 function rotate9(){
+$('#large9').toggleClass('expand');
     $('#rotate9').toggleClass('rotated');
 $('#img9,#more9').toggleClass('hide');   
   }
@@ -782,14 +1384,14 @@ $('#img9').toggleClass('hide');
     
     </div>
                
-    <div id="large9" onclick="sclose9()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: #39375b;">
+    <div id="large9" onclick="sclose9()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
         
-   <div id="img9" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #f5b0cb;">
-       <div class="contain">                     
-           <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Icons_Help_LTR" overflow="hidden" height="100px" width="100px" ><path d="M48 10C27 10 10 27 10 48 10 69 27 86 48 86 69 86 86 69 86 48 86 27 69 10 48 10ZM48 76C45.2 76 43 73.8 43 71 43 68.2 45.2 66 48 66 50.8 66 53 68.2 53 71 53 73.8 50.8 76 48 76ZM51 52.8C51 55.4 51 62 51 62L45 62 45 47 48 47C54.7 47 59 43.1 59 37 59 30.7 54.3 26 48 26 41.1 26 37 30.1 37 37L31 37C31 26.8 37.8 20 48 20 57.5 20 65 27.5 65 37 65 45.5 59.4 51.6 51 52.8Z"/></svg>    </div>
+        <div style="background: #39375b; margin: 0 auto; border-radius: 30px; width: 90%;">  
+        
+   <div id="img9" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #39375b;">
         </div>
 
-    <p class="small" style="color: #fff;"><b>Self-help Tip 4</b>
+    <p style="color: #fff;"><b>Self-help Tip 4</b>
     </p>
         
         <p style="color: #fff"><b>Support yourself with healthy lifestyle habits</b><br><br>
@@ -809,10 +1411,10 @@ $('#img9,#more9').toggleClass('hide');
   }
         </script>
        
-        <div class="small">
+        <div>
             <div class="tip rotated" id="sclose9"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
 
-    </div>
+        </div></div>
                
     </div>
     </ons-row>        
