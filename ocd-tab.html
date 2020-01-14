@@ -1,0 +1,583 @@
+<ons-page>
+  <script>
+    const openMenu = () => {
+      document.querySelector('#menu').open();
+    };
+      
+      document.addEventListener('prechange', function(event) {
+  document.querySelector('ons-toolbar .center')
+    .innerHTML = event.tabItem.getAttribute('label');
+});
+
+  </script>
+    
+                <script>
+       function changesize(){
+    $('#video').toggleClass('expand');
+    $('.tfbutton2').toggleClass('hide');
+    $('.tfbutton0').toggleClass('hide');
+        $('#video1').toggleClass('mini');
+        $('#space0').toggleClass('mini');
+}
+        </script>
+      
+
+    
+  <ons-tabbar swipeable id="OCDtabbar">
+    <ons-tab page="ocd.html" label="Signs" icon="md-menu"></ons-tab>
+     <ons-tab page="ocd2.html" label="Tips" icon="md-help"></ons-tab>
+  </ons-tabbar>
+    
+    
+<template id="ocd.html">
+    
+    <ons-page id="ocd1">
+
+
+  <ons-toolbar>
+    <div class="left">
+<ons-back-button></ons-back-button>
+    </div>
+    <div class="center">OCD</div>
+      <div class="right">
+          <ons-toolbar-button onclick="loadPage('depression.html')">Next</ons-toolbar-button>
+      </div>
+  </ons-toolbar>
+
+<ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">What is Obsessive Compulsive Disorder (OCD)?</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">OCD is an anxiety disorder characterized by uncontrollable, unwanted thoughts and ritualized, repetitive behaviours you feel compelled to perform.<br>
+The compulsive rituals and behaviours often end up causing anxiety themselves as they become more demanding and time-consuming. 
+
+</span>
+</p>
+
+
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p>
+</p>
+
+      
+
+    </div>    </ons-row>
+             
+    
+                       <ons-row style="text-align: center; background-color: #eaeaea">  
+<ons-col class="box1" width="100%" style="padding: 40px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 10px 0; color: #000;"><b>How do you know that you may have OCD? </b></p>
+
+    </ons-col>
+
+    </ons-row>    
+    
+    
+
+
+    
+    <script>        var prev10 = function() {
+  var carousel10 = document.getElementById('carousel-2');
+  carousel10.prev();
+};
+
+var next10 = function() {
+  var carousel10 = document.getElementById('carousel-2');
+  carousel10.next();
+};           </script>
+    
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=0 id="carousel-2" style="padding: 0 0 0px 0; margin: 0">
+        
+    <ons-carousel-item style="padding: 0px">
+        
+    <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Do you have these thoughts?
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">
+</span>
+</p>
+
+      <div class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;" onclick="next10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>Example here</b></p>
+    
+        </div>
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><span style="color: #000; font-size: 22px; font-weight: 300;">
+&#8226;&nbsp;Fear of being contaminated by germs or dirt or contaminating others<br>
+&#8226;&nbsp;Fear of losing control and harming yourself or others<br>
+&#8226;&nbsp;Excessive focus on religious or moral ideas<br>
+&#8226;&nbsp;Fear of losing or not having things you might need<br>
+&#8226;&nbsp;Order and symmetry: the idea that everything must line up “just right”<br>
+&#8226;&nbsp;Superstitions; excessive attention to something considered lucky or unlucky
+
+        </span>
+</p>
+    </div>
+               
+
+    </ons-row>
+
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff7e67; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><span style="color: #fff; font-size: 22px; font-weight: 500;">Melanie is worried of being infected with germs so, she keeps washing her hands incessantly. There were many occasions when Melanie remained in the toilet for more than 3 hours just washing her hands. This behavior has begun to worry her family and close friends. It causes anxiety knowing that her hands may be infected with germs. She is often not convinced that her hands have already been washed because she believes that the germs are still on her hands.
+</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>    
+    
+    
+                       <ons-row style="text-align: center; background-color: #eaeaea">  
+<ons-col class="box1" width="100%" style="padding: 40px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 10px 0; color: #000;"><b><i>"It's not about being tidy, it's about having no control over your negative thoughts. It's about being afraid not doing things a certain way will cause harm."</i>
+</b></p>
+
+    </ons-col>
+
+    </ons-row>   
+        
+             
+<div id="video" class="box1 full" style="padding: 0; font-size: 22px; background: transparent;">
+<iframe id="video1" style="width: 100%;" src="https://www.youtube.com/embed/82kIb4Tu9u4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              <div class="tfbutton0" style="text-align: center; background: transparent; width: auto; margin: 0; padding: 0" onclick="changesize()">
+                  <p style="padding: 10px 0; margin: 0; background: white; border-radius: 30px; font-size: 70%; color: #00a3e0; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);margin: 10px; width: auto; position: relative"><b>Minimise&nbsp;&nbsp;&nbsp;&nbsp;</b><span style="position: absolute; right: 20px;"><ons-icon color="#00a3e0" size="18px" icon="md-window-minimize" style="vertical-align: middle;"></ons-icon></span></p>
+    </div>
+    
+                  <div class="tfbutton2 hide" style="text-align: center; background: transparent; width: auto; margin: 0; padding: 0" onclick="changesize()">
+                      <p style="padding: 10px 0; margin: 0; background: white; border-radius: 30px; font-size: 70%; color: #00a3e0; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);margin: 10px; width: auto; position: relative"><b>Maximise&nbsp;&nbsp;&nbsp;&nbsp;</b><span style="position: absolute; right: 20px;" ><ons-icon color="#00a3e0" size="18px" icon="md-window-maximize" style="vertical-align: middle"></ons-icon></span></p>
+    </div>
+
+          </div>
+    
+    
+    <ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
+<div class="box1 half left10" style="padding: 0; font-size: 22px;">
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;"><ons-icon size="40px" icon="md-check" style="color: limegreen"></ons-icon>&nbsp;OCD is</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">a mental health diagnosis.</span></p> 
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+        <p style="color: #000; font-size: 26px; padding: 40px;"><b><span style="font-size: 34px;"><ons-icon size="40px" icon="md-close" style="color: red"></ons-icon>&nbsp;OCD is <i><u>not</u></i></span>
+        </b><br><br><span style="color: #000; font-size: 26px;">
+a choice,  quirk, logic, joke or a personality trait.
+<br><br>
+</span></p>
+
+    </div></ons-row>  
+    
+
+    <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Describing OCD as a personal quirk or a joke ignores the very real needs of people with this condition.
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">
+</span>
+</p>
+
+ <!--    <a href="https://www.youtube.com/watch?v=82kIb4Tu9u4" target="_blank">  <div class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;">
+    <p style="margin: 10px; padding: 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b><ons-icon id="playbutton" size="40px" icon="md-youtube-play" style="vertical-align: middle"></ons-icon>&nbsp;&nbsp;Video</b></p>
+    
+         </div></a>-->
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><span style="color: #000; font-size: 22px; font-weight: 300;">Symptoms which may look funny or quirky from the outside may be a big source of stress for the person experiencing them. A “harmless” joke may unknowingly use a person’s suffering for amusement.<br><br>
+You never know someone else’s history. A person with OCD may hear the joke and wonder if you really feel that way about people like them.<br><br>
+OCD jokes create false perceptions about OCD. Stereotypes can make it harder for people with OCD to recognize their symptoms and get help.<br><br>
+        <b>Jokes about mental health can promote stigma. Stigma is linked to discrimination and can be a barrier to treatment.</b></span>
+</p>
+    </div>
+               
+
+    </ons-row>
+        
+        
+ 
+
+            
+
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Do you recognise these compulsive behaviours in yourself? 
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">
+</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><span style="color: #000; font-size: 22px; font-weight: 300;">
+&#8226;&nbsp;Excessive double-checking of things, such as locks, appliances, and switches.<br>
+&#8226;&nbsp;Repeatedly checking in on loved ones to make sure they’re safe.<br>
+&#8226;&nbsp;Counting, tapping, repeating certain words, or doing other senseless things to reduce anxiety.<br>
+&#8226;&nbsp;Spending a lot of time washing or cleaning.<br>
+&#8226;&nbsp;Ordering or arranging things “just so”.<br>
+&#8226;&nbsp;Praying excessively or engaging in rituals triggered by religious fear.<br>
+&#8226;&nbsp;Accumulating “junk” such as old newspapers or empty food containers.<br>
+        </span>
+</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>
+          
+            <div id="space0" style="margin: 0; padding: 20px; background: #eaeaea; height: 200px;">  
+                
+                
+        </div>
+    
+    
+ 
+
+    
+        <ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+      <div class="full" style="width: 100%; text-align: center; margin: 20px;">
+          <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; color: #ff7e67; font-size: 15.4px"><b>Swipe for more info</b>&nbsp;&nbsp;&nbsp;&nbsp;<ons-icon size="18px" icon="md-long-arrow-tab"></ons-icon></p>
+    
+        </div>
+        
+        </ons-row>
+
+    
+    
+    </ons-page></template>    
+    
+<template id="ocd2.html" id="ocd2">
+<ons-page id="ocd2">
+  <ons-toolbar>
+    <div class="left">
+<ons-back-button></ons-back-button>
+    </div>
+    <div class="center">OCD</div>
+      <div class="right">
+          <ons-toolbar-button onclick="loadPage('depression.html')">Next</ons-toolbar-button>
+      </div>
+  </ons-toolbar>
+    
+<ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">What can you do to reduce your OCD?</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">OIf you think you have OCD, here are some general tips that you may employ. Note that these should and can never replace profession help.
+</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p>
+</p>
+
+      
+
+    </div>    </ons-row>
+             
+
+              <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Identify your triggers
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><b>
+        </b><span style="color: #000; font-size: 22px; font-weight: 300;">
+Recognize the triggers—the thoughts or situations—that bring on your obsessions and compulsions.<br><br> 
+Record a list of the triggers you experience each day and the obsessions they provoke. <br><br>
+Rate the intensity of the fear or anxiety you experienced in each situation and then the compulsions or mental strategies you used to ease your anxiety. <br><br>
+Keeping track of your triggers can help you anticipate your urges. And by anticipating your compulsive urges before they arise, you can help to ease them. <br><br>
+Identifying and recording your triggers also provides an important tool for learning to resist your OCD compulsions.
+
+        </span>
+
+</p>
+
+
+            
+        </div>
+        
+    </ons-row>  
+    
+    
+    
+    <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Learn to resist OCD compulsions
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+    
+                  <a href="https://iocdf.org/about-ocd/ocd-treatment/erp/" target="_blank"><div class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>More info on ERP</b></p>
+    
+                      </div></a>
+    
+    
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><b>
+        </b><span style="color: #000; font-size: 22px; font-weight: 300;">
+        By repeatedly exposing yourself to your OCD triggers, you can learn to resist the urge to complete your compulsive rituals. This is known as <span style="font-weight: 300"><b>exposure &amp; response prevention (ERP)</b></span>.<br>
+
+        
+        <br>
+ERP requires you to repeatedly expose yourself to the source of your obsession — and then refrain from the compulsive behaviour you’d usually perform to reduce your anxiety.
+        </span>
+</p>
+    </div>
+    </ons-row>
+
+
+        <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Challenge obsessive thoughts
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+    
+                      <a href="https://iocdf.org/about-ocd/ocd-treatment/erp/" target="_blank"><div class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>More info on ERP</b></p>
+    
+                          </div></a>
+    
+    
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><b>
+        </b><span style="color: #000; font-size: 22px; font-weight: 300;">
+        You can overcome disturbing, obsessive thoughts by learning to tolerate them through <b>exposure &amp; response prevention exercises</b>.<br><br>
+ It’s also important to remind yourself that just because you have an unpleasant thought, that doesn’t make you a bad person. <br><br>
+Your thoughts are just thoughts. Even unwanted, intrusive, or violent thoughts are normal—it’s only the importance you attach to them that turns them into damaging obsessions.
+
+        </span>
+</p>
+    </div>
+    </ons-row>
+    
+    
+    
+    
+       
+        <ons-row style="margin: 0; padding: 20px; background: #000;" id="top16">  
+<div class="box1 half left10" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #fff; font-size: 26px"><b><span style="font-size: 34px;">Create an OCD worry period</span>
+        </b><br><br><span style="color: #fff; font-size: 26px;">
+        
+Rather than trying to suppress obsessions or compulsions, develop the habit of rescheduling them.
+
+
+        </span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p style="color: #000; font-size: 26px; padding: 40px;">
+</p>
+
+
+      
+
+    </div></ons-row>
+    
+            <ons-row style="margin: 0; padding: 20px; background: #000;">  
+<div class="box1 full" style="padding: 0; font-size: 22px; background: #ff7e67;">
+
+    </div>
+                
+    <div class="box1 full" style="padding: 0; font-size: 22px; background: #111; margin: 0; border-radius: 0; border-top: 5px solid white; border-left: 5px solid white; border-right: 5px solid white; ">
+    
+    <p style="color: #fff; font-size: 26px; padding: 20px 40px;"><b>Step 1:
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">
+        Choose one or two 10-minute “worry periods” each day, time you can devote to obsessing.
+</span>
+</p>
+    </div>
+                
+    <div class="box1 full" style="padding: 0; font-size: 22px; background: #222; margin: 0; border-radius: 0; border-left: 5px solid white; border-right: 5px solid white;">
+    
+    <p style="color: #fff; font-size: 26px; padding: 20px 40px;"><b>Step 2:
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">
+        During your worry period, focus only on negative thoughts or urges.
+   </span>
+</p>
+    </div>
+
+                    
+    <div class="box1 full" style="padding: 0; font-size: 22px; background: #333; margin: 0; border-radius: 0; border-left: 5px solid white; border-right: 5px solid white;">
+    
+    <p style="color: #fff; font-size: 26px; padding: 20px 40px;"><b>Step 3:</b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Don’t try to correct them.
+   </span>
+</p>
+    </div>
+                
+       <div class="box1 full" style="padding: 0; font-size: 22px; background: #444; margin: 0; border-radius: 0; border-left: 5px solid white; border-right: 5px solid white;">
+             
+    <p style="color: #fff; font-size: 26px; padding: 20px 40px;"><b>Step 4:</b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">At the end of the worry period, take a few calming breaths, let the obsessive thoughts go, and return to your normal activities. 
+    </span>
+           </p></div>
+                      
+                <div class="box1 full" style="padding: 0; font-size: 22px; background: #555; margin: 0; border-radius: 0; border-left: 5px solid white; border-right: 5px solid white;">
+    
+    <p style="color: #fff; font-size: 26px; padding: 20px 40px;"><b>Step 4:
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">The rest of the day, however, is to be designated free of obsessions.
+    </span>
+</p>
+                </div>       
+                    <div class="box1 full" style="padding: 0; font-size: 22px; background: #666; margin: 0; border-radius: 0; border-left: 5px solid white; border-right: 5px solid white; border-bottom: 5px solid white;">
+
+    <p style="color: #fff; font-size: 26px; padding: 20px 40px;"><b>Step 5:
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">
+        When thoughts come into your head during the day, write them down and “postpone” them to your worry period.
+    </span>
+                        </p></div>
+                
+ 
+               
+    </ons-row>
+    
+        
+    
+    
+            <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Reach out for support
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><b>
+        </b><span style="color: #000; font-size: 22px; font-weight: 300;">
+<b>Stay connected to family and friends</b>. Obsessions and compulsions can consume your life to the point of social isolation. In turn, social isolation will aggravate your OCD symptoms. It’s important to invest in relating to family and friends. Talking face-to-face about your worries and urges can make them feel less real and less threatening.
+<br><br>
+        <b>Join an OCD support group</b>. You’re not alone in your struggle with OCD, and participating in a support group can be an effective reminder of that. OCD support groups enable you to both share your own experiences and learn from others who are facing the same problems.
+
+        </span>
+</p>
+    </div>
+    </ons-row>
+    
+       
+                <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Make lifestyle changes to ease OCD
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><b>
+        </b><span style="color: #000; font-size: 22px; font-weight: 300;">
+A healthy, balanced lifestyle plays a big role in easing anxiety and keeping OCD compulsions, fears, and worry at bay.<br><br>
+Remember to eat healthily, sleep sufficiently and exercise regularly.
+        </span>
+</p>
+    </div>
+    </ons-row>
+    
+
+            <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Seek professional support
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
+</p>
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><b>
+        </b><span style="color: #000; font-size: 22px; font-weight: 300;">
+When you do not feel better and the anxiety worsens, please seek professional support.<br><br>
+There is nothing wrong to seek help when you need to.
+
+        </span>
+</p>
+    </div>
+
+    </ons-row>
+    
+            <ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+      <div class="full" style="width: 100%; text-align: center; margin: 20px;">
+          <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; color: #ff7e67; font-size: 15.4px"><b>Swipe for more info</b>&nbsp;&nbsp;&nbsp;&nbsp;<ons-icon rotate="180" size="18px" icon="md-long-arrow-tab"></ons-icon></p>
+    
+        </div>
+        
+        </ons-row></ons-page></template>
+    
+    
+
+    
+</ons-page>
