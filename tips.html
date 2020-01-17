@@ -687,9 +687,33 @@ Eating disturbances may include inadequate or excessive food intake which can ul
   </ons-carousel>
 
     </ons-row>
+       
+            <div class="buton" style="position: absolute; top: 0; width: 100%; height: auto">
+<ons-fab class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 104px; background: red;">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
             
+<ons-fab class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 164px; background: orange;">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
             
+<ons-fab class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 224px;background: green;">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
             
+<div style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 99px; right: 20px; z-index: 100; text-align: right; font-weight: 600; padding"> 
+                <p>Anorexia Nervosa</p>
+            </div>
+            
+<div style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 159px; right: 20px; z-index: 100; text-align: right; font-weight: 600;"> 
+                <p>Bulimia</p>
+            </div>
+            
+<div style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 219px; right: 20px; z-index: 100; text-align: right; font-weight: 600;"> 
+                <p>Binge Eating Disorder</p>
+            </div>
+                
+            </div>
 
         <ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
 <div class="box1 full left10" style="padding: 0; font-size: 22px;">
@@ -1441,57 +1465,7 @@ The professional will be able to provide you with the suitable recovery plan and
       
 
     </div></ons-row>
-           
-           <ons-row style="text-align: center; background: #000; height: 150px" id="trigger19">  
-               
-    </ons-row>
-           <ons-row style="text-align: center; background-color: #000;" id="end10">  
-<ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
 
-       <ons-fab style="background: transparent; border: 2px solid #fff;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top100'));" position="center bottom">
-<ons-icon icon="md-chevron-up"></ons-icon></ons-fab>
-    
-        <script>
-		// build scene
-                                new ScrollMagic.Scene({
-								triggerElement: "#trigger19",
-								triggerHook: 1, // show, when scrolled 10% into view
-											})
-											.setClassToggle("#end10", "end")
-											.addTo(controller);
-</script>
-    
-    
-               <script>
-window.smoothScroll = function(target) {
-    var scrollContainer = target;
-    do { //find scroll container
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-    } while (scrollContainer.scrollTop == 0);
-    
-    var targetY = 0;
-    do { //find the top of target relatively to the container
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop;
-    } while (target = target.offsetParent);
-    
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
-    }
-    // start scrolling
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}      
-    </script>
-    
-    
-    </ons-col>
-
-               </ons-row>
-    
-    </ons-list>
+        </ons-list>
     </div>
 </ons-page>

@@ -42,7 +42,7 @@ The individual has a severe fear or anxiety, which is linked to certain objects 
         <table style="color: #000; font-size: 26px;" border="0" cellpadding="5" cellspacing="5">
   <tr>
     <td>        
-        <div class="leftright" style="float: left" onclick="loadPage('gad.html')">
+        <div class="leftright" style="float: left" onclick="loadPage('gad-tab.html')">
 
              <span style="padding: auto; text-align: left; font-size: 70%"><b>Generalised Anxiety Disorder</b></span>
 
@@ -69,8 +69,8 @@ The individual has a severe fear or anxiety, which is linked to certain objects 
 <ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
 <div class="box1 half left10" style="padding: 0; font-size: 22px;">
     
-    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Other common mental issues</span>
-        </b><br><br><span style="color: #000; font-size: 26px;">Such as depression and eating disorders may be more relevant, given the highly competivie and stressful enviroment of today's academic landscape and societal changes.</span>
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Others</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">These common mental issues such as depression and eating disorders may be more relevant, given the highly competivie and stressful enviroment of today's academic landscape and societal changes.</span>
 </p>
 
       
@@ -82,7 +82,7 @@ The individual has a severe fear or anxiety, which is linked to certain objects 
    <table style="color: #000; font-size: 26px;" border="0" cellpadding="5" cellspacing="5">
   <tr>
     <td>        
-        <div class="leftright" style="float: left" onclick="loadPage('depression.html')">
+        <div class="leftright" style="float: left" onclick="loadPage('depression-tab.html')">
 
              <span style="padding: auto; text-align: left; font-size: 70%"><b>Depression</b></span>
 
@@ -98,53 +98,5 @@ The individual has a severe fear or anxiety, which is linked to certain objects 
 </table>
 
     </div></ons-row>
-
-               <ons-row style="text-align: center; background-color: #EAEAEA; height: 150px;" id="end53">  
-<ons-col class="box1" width="100%" style="padding: 10px 0 0 0;">
-
-    
-           <ons-fab style="background: transparent; border: 2px solid #000;" modifier="mini" style="position: fixed" onclick="smoothScroll(document.getElementById('top53'));" position="center bottom">
-<ons-icon icon="md-chevron-up" style="color: #000"></ons-icon></ons-fab>
-    
-        <script>
-		// build scene
-                                new ScrollMagic.Scene({
-								triggerElement: "#trigger53",
-								triggerHook: 1, // show, when scrolled 10% into view
-											})
-											.setClassToggle("#end53", "end")
-											.addTo(controller);
-</script>
-    
-    
-               <script>
-window.smoothScroll = function(target) {
-    var scrollContainer = target;
-    do { //find scroll container
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-    } while (scrollContainer.scrollTop == 0);
-    
-    var targetY = 0;
-    do { //find the top of target relatively to the container
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop;
-    } while (target = target.offsetParent);
-    
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
-    }
-    // start scrolling
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}      
-    </script>
-    
-    
-    </ons-col>
-
-               </ons-row>
 
 </ons-page>
