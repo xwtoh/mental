@@ -1,22 +1,47 @@
-<ons-page id="tips">
-
+<ons-page id="tips-tab">
     
-  <ons-toolbar>
-    <div class="left">
-<ons-back-button></ons-back-button>
-    </div>
-    <div class="center">Eating Disorders</div>
+        <!--
+<script type="text/javascript">
+document.addEventListener('init', function(e) {
+  var scrollValue = 0;
+  var page = e.target;
+  
+  page.querySelector('.page__content').addEventListener('scroll', function (e) {
+    var delta = this.scrollTop - scrollValue;0;
+    if (Math.abs(delta) > 1000) {
+      console.log(delta, scrollValue);
+    document.getElementById('vert').style.opacity = 1;
+    document.getElementById('horiz0').style.opacity = 0;
+     document.getElementById('horiz1').style.opacity = 0;
+     document.getElementById('horiz2').style.opacity = 0;
+        document.getElementById('vert2').style.opacity = 1;
+    document.getElementById('horiz10').style.opacity = 0;
+     document.getElementById('horiz11').style.opacity = 0;
+     document.getElementById('horiz21').style.opacity = 0;
+}
+    
+    else  {
+    document.getElementById('vert').style.opacity = 0;
+    document.getElementById('horiz0').style.opacity = 1;    
+     document.getElementById('horiz1').style.opacity = 1; 
+     document.getElementById('horiz2').style.opacity = 1; 
+    document.getElementById('vert2').style.opacity = 0;
+    document.getElementById('horiz10').style.opacity = 1;    
+     document.getElementById('horiz11').style.opacity = 1; 
+     document.getElementById('horiz21').style.opacity = 1; 
+        
+    }
       
-              <div class="right">
-                   <ons-toolbar-button onclick="loadPage('home.html')">Home</ons-toolbar-button>
-      </div>
-  </ons-toolbar>
-    <div id="test">
-        <ons-list id="top100">
+  });
+})
+</script>-->
+  <script>
 
-
-            <script>
- 
+      
+      document.addEventListener('prechange', function(event) {
+  document.querySelector('ons-toolbar .center')
+    .innerHTML = event.tabItem.getAttribute('label');
+});
                 
         var prev10 = function() {
   var carousel10 = document.getElementById('carousel-2');
@@ -80,17 +105,1091 @@ var next4 = function() {
 
             </script>
             
-                            <script>
+   <script>
        function bulimia(){
 document.getElementById('bulimia').scrollIntoView();
+           
 }
      function anorexia(){
 document.getElementById('anorexia').scrollIntoView();
+
 }
     function binge(){
 document.getElementById('binge').scrollIntoView();}
+                                
+       function bulimia2(){
+document.getElementById('bulimia2').scrollIntoView();
+}
+     function anorexia2(){
+document.getElementById('anorexia2').scrollIntoView();
+}
+    function binge2(){
+document.getElementById('binge2').scrollIntoView();}
+
+
+         document.addEventListener('show', function(event) {
+var index = document.querySelector('#myTabbar').getActiveTabIndex()
+
+  if (index === 0) {
+document.getElementById('vert1').style.display = "block";
+document.getElementById('vert2').style.display = "none";
+    
+  } else if (index === 1) {
+document.getElementById('vert2').style.display = "block";
+document.getElementById('vert1').style.display = "none";
+  }
+    else{
+document.getElementById('vert1').style.display = "block";
+document.getElementById('vert2').style.display = "none";
+    }
+
+})
         </script>
+<!--
+                <script>
+       function changesize(){
+    $('#video').toggleClass('expand');
+    $('.tfbutton2').toggleClass('hide');
+    $('.tfbutton0').toggleClass('hide');
+        $('#video1').toggleClass('mini');
+        $('#space0').toggleClass('mini');
+}
+        </script>-->
+      
+
+    
+  <ons-tabbar var="myTabbar" swipeable id="myTabbar">
+    <ons-tab page="tips.html" label="Signs" icon="md-menu"></ons-tab>
+     <ons-tab page="tips2.html" label="Tips" icon="md-help"></ons-tab>
+  </ons-tabbar>
+    
+    
+           
+            <div id="vert1" class="buton" style="position: absolute; top: 0; right: 0; width: 100%; height: auto">
+<ons-fab id="anorexiabut"  onclick="anorexia()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 104px; background: red;">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
             
+<ons-fab id="bulimiabut" onclick="bulimia()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 164px; background: orange;">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
+            
+<ons-fab id="bingebut" onclick="binge()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 224px;background: green;">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
+            
+<div style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 99px; right: 20px; z-index: 900; text-align: right; font-weight: 600; padding"> 
+                <p>Anorexia Nervosa</p>
+            </div>
+            
+<div id="bulimia1" style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 159px; right: 20px; z-index: 900; text-align: right; font-weight: 600;"> 
+                <p>Bulimia</p>
+            </div>
+            
+<div id="binge1" style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 219px; right: 20px; z-index: 900; text-align: right; font-weight: 600;"> 
+                <p>Binge Eating Disorder</p>
+            </div>
+                
+            </div>
+    
+           <div id="vert2" class="buton" style="position: absolute; top: 0; right: 0; width: 100%; height: auto">
+<ons-fab id="anorexiabut"  onclick="anorexia2()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 104px; background: red;">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
+            
+<ons-fab id="bulimiabut" onclick="bulimia2()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 164px; background: orange;">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
+            
+<ons-fab id="bingebut" onclick="binge2()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 224px;background: green;">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
+            
+<div style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 99px; right: 20px; z-index: 900; text-align: right; font-weight: 600; padding"> 
+                <p>Anorexia Nervosa</p>
+            </div>
+            
+<div id="bulimia1" style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 159px; right: 20px; z-index: 900; text-align: right; font-weight: 600;"> 
+                <p>Bulimia</p>
+            </div>
+            
+<div id="binge1" style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 219px; right: 20px; z-index: 900; text-align: right; font-weight: 600;"> 
+                <p>Binge Eating Disorder</p>
+            </div>
+                
+            </div>
+    
+
+    
+    
+<template id="tips.html" style="overflow-x: hidden">
+    
+    <ons-page id="tips1">
+
+    
+  <ons-toolbar>
+    <div class="left">
+<ons-back-button></ons-back-button>
+    </div>
+    <div class="center">Eating Disorders</div>
+      
+              <div class="right">
+                   <ons-toolbar-button onclick="loadPage('home.html')">Home</ons-toolbar-button>
+      </div>
+  </ons-toolbar>
+    <div id="test">
+        <ons-list id="top100">
+
+
+            
+<ons-row style="margin: 0; padding: 20px;background: #000;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #fff; font-size: 26px"><b><span style="font-size: 34px;">Eating Disorders</span>
+        </b><br><br><span style="color: #fff; font-size: 26px;">Eating disorders are when people experience severe disturbances in their eating behaviours and related thoughts and emotions. 
+        Eating disorders can affect <span style="font-weight: 300"><i>people of any gender</i>. </span>
+        </span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p>
+</p>    </div>
+            </ons-row>
+
+
+    <ons-row style="margin: 0; padding: 20px; background: #000;">  
+<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #333;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Signs
+        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">
+</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
+    
+    <p style="color: #fff; font-size: 26px"><b>
+        </b><span style="color: #000; font-size: 22px; font-weight: 300;">
+&#8226;&nbsp;Those with eating disorders typically become pre-occupied with food and their body weight, and tend to be perfectionists with low self-esteem and are extremely critical of themselves and their bodies.<br>
+&#8226;&nbsp;An intense fear of gaining weight and of being fat may become all-pervasive.<br><br>
+In early stages, one may often deny that they have a problem.<br>
+Eating disturbances may include inadequate or excessive food intake which can ultimately damage an individual’s well-being.
+        </span>
+</p>
+
+      
+
+    </div>
+               
+
+    </ons-row>
+                
+          
+    
+<ons-row style="text-align: center; background-color: #000">  
+<ons-col class="box1" width="100%" style="padding: 40px 0; font-size: 26px">
+    
+    <p style="font-size: 26px; padding: 10px 0; color: #fff;"><b>The most critical and common eating disorders are: <i>anorexia nervosa</i>, <i>bulimia</i> and <i>binge eating disorder</i>.</b></p>
+
+    </ons-col>               
+
+    </ons-row>  
+            
+<ons-row style="text-align: center; background-color: #000">  
+<ons-col class="box1" width="" style="padding: 40px 0; font-size: 26px">
+    <ons-fab id="horiz0" class="buton0" modifier="mini" style="background: red;" onclick="anorexia()">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
+    <p style="font-size: 26px; padding: 10px 0; color: #fff; font-weight: 500;">anorexia nervosa</p>
+
+    </ons-col>  
+                                   
+<ons-col class="box1" width="" style="padding: 40px 0; font-size: 26px">
+    <ons-fab id="horiz1" class="buton0" modifier="mini" style="background: orange;" onclick="bulimia()">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
+    <p style="font-size: 26px; padding: 10px 0; color: #fff;; font-weight: 500;">bulimia</p>
+
+    </ons-col>  
+<ons-col class="box1" width="" style="padding: 40px 0; font-size: 26px">
+    <ons-fab id="horiz2" class="buton0" modifier="mini" style="background: green;" onclick="binge()">
+                      <ons-icon icon="md-plus"></ons-icon>
+  </ons-fab>
+    <p style="font-size: 26px; padding: 10px 0; color: #fff;; font-weight: 500;">binge eating disorder</p>
+
+    </ons-col>  
+
+    </ons-row>  
+            
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel-2" style="padding: 0 0 0px 0; margin: 0; width: 100%;">
+        
+
+    <ons-carousel-item style="padding: 0px;  width: 100%">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #994b3d; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating disorders <b>can affect any gender</b>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #994b3d"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #994b3d; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating disorders only affect young women.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #994b3d"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #994b3d"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #994b3d; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating disorders <b>can affect any gender</b>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #994b3d"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+                   
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel-1" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #cc6452; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating a large amount of food then purging is a sign of <b>Bulimia</b>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next0()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #cc6452"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #cc6452; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating a large amount of food then purging it is a sign of Anorexia.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev0()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #cc6452"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next0()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #cc6452"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #cc6452; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Eating a large amount of food then purging is a sign of <b>Bulimia</b>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev0()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #cc6452"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+                   
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff7e67; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Binge-eating means eating a large amount of food within a certain period of time. Binge-eaters eat even when they are not hungry. They often eat until uncomfortably full. Binge-eaters do not purge after overeating. </span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff7e67; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Binge Eating disorder is when a person consumes of large amounts rapidly of food while feeling a loss of control.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff7e67; border-radius: 30px;">
+    
+    <p style="color: #fff; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #fff; font-size: 22px; font-weight: 300;">Binge-eating means eating a large amount of food within a certain period of time. Binge-eaters eat even when they are not hungry. They often eat until uncomfortably full. Binge-eaters do not purge after overeating.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+            
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel2" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff9785; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">They usually have poor body image. They imagine physical defects or a minor defect that others often cannot see or notice.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next2()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff9785"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff9785; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">Inaccurately seeing or experiencing your body can be called <i>body image distortion</i>.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev2()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next2()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ff9785; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">They usually have poor body image.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev2()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+            
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel3" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffb1a3; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia are obsessed with being thin. They often develop peculiar eating habits. They may pick out just a few foods to eat. Or they may eat foods in small quantities or carefully weigh foods. They may use diet pills and laxatives to lose weight. They check their weight over and over again. They often exercise more than normal to control their weight.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next3()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffb1a3; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia nervosa see themselves as overweight even though they are dangerously thin.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev3()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next3()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffb1a3; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia are obsessed with being thin. They often develop peculiar eating habits. They may pick out just a few foods to eat. Or they may eat foods in small quantities or carefully weigh foods. They may use diet pills and laxatives to lose weight. They check their weight over and over again. They often exercise more than normal to control their weight.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev3()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+            
+<ons-row style="position: relative; background: #EAEAEA;">     
+    
+    <ons-carousel swipeable auto-scroll overscrollable initial-index=1 id="carousel4" style="padding: 0 0 0px 0; margin: 0">
+        
+
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffcbc2; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Correct!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia are obsessed with being thin. They often develop peculiar eating habits. They may pick out just a few foods to eat. Or they may eat foods in small quantities or carefully weigh foods. They may use diet pills and laxatives to lose weight. They check their weight over and over again. They often exercise more than normal to control their weight.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="next4()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+        
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffcbc2; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>True or false?
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia nervosa see themselves as overweight even though they are dangerously thin.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="prev4()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>True</b></p>
+    
+    </div>
+    
+<div class="full tfbutton" style="width: 50%; text-align: center; margin: 0" onclick="next4()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>False</b></p>
+    
+        </div></ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+        
+        
+    <ons-carousel-item style="padding: 0px">
+               <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left1" style="padding: 0; font-size: 22px; background: #ffcbc2; border-radius: 30px;">
+    
+    <p style="color: #000; font-size: 26px"><b>Wrong!
+        </b><br><span style="color: #000; font-size: 22px; font-weight: 300;">People with anorexia are obsessed with being thin. They often develop peculiar eating habits. They may pick out just a few foods to eat. Or they may eat foods in small quantities or carefully weigh foods. They may use diet pills and laxatives to lose weight. They check their weight over and over again. They often exercise more than normal to control their weight.</span>
+</p>
+    
+    
+    <ons-row>
+
+<div class="full tfbutton" style="width: 100%; text-align: center; margin: 0" onclick="prev4()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #000"><b>Back</b></p>
+    
+    </div>
+    
+</ons-row>
+
+      
+
+    </div>
+  
+        </ons-row>
+    </ons-carousel-item>
+    
+  </ons-carousel>
+
+    </ons-row>
+
+            
+<div id="anorexia">            
+<ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
+<div class="box1 full left10" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Anorexia Nervosa</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">When one has an obsessive fear of gaining weight, refusal to maintain a healthy body weight and an unrealistic perception of body image. <br><br>
+Many people with anorexia nervosa will fiercely limit the quantity of food they consume and view themselves as overweight, even when they are clearly underweight. <br><br>
+Anorexia can have damaging health effects, such as brain damage, multi-organ failure, bone loss, heart difficulties, and infertility. <br><br>
+The risk of death is highest in individuals with this disease.
+</span>
+</p>
+
+      
+
+    </div>
+               
+            
+            </ons-row>
+ 
+<ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+
+<div class="reverse" style="width: 100%;">    
+    
+<div class="box1 half left3" style="padding: 0; font-size: 22px; background: #553c8b; position: relative">
+    
+    <p style="color: #fff; font-size: 26px"><b>Signs &amp; Symptoms</b>
+        </p>
+
+    <div class="small">
+            <script>
+       function rotate(){
+    $('#large1').toggleClass('expand');
+    $('#rotate').toggleClass('rotated');
+$('#img,#more,#contain').toggleClass('hide'); 
+}
+        </script>
+        <div class="tip" id="rotate" onclick="rotate()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more">more</p>
+    </div>
+    
+        <div class="large">
+            <script>
+        function srotate(){
+$('#large1').toggleClass('expand');
+$('#large1').toggleClass('mobileheight');
+$('#img,#contain,#smore').toggleClass('hide'); 
+  }
+        </script>
+        <div class="tip" id="srotate" onclick="srotate()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore">more</p>
+    </div>
+
+    
+    </div>
+               
+    <div id="large1" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);" onclick="sclose1()">
+        
+        
+<div style="background: #553c8b; margin: 0 auto; border-radius: 30px; width: 90%;">        
+        
+   <div id="img" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #553c8b;">
+        </div>
+
+    <p style="color: #fff;"><b>Signs &amp; Symptoms</b>
+    </p>
+        
+    <p style="color: #fff">Dramatic weight loss<br><br>
+Dresses in layers to hide weight loss or stay warm<br><br>
+Preoccupation with weight, food, calories, fat grams, and dieting. <br><br>
+Harshly critical about appearance.<br><br>
+Resists or is unable to maintain a body weight appropriate for their age, height, and build<br><br>
+Maintains an excessive, rigid exercise regime – despite weather, fatigue, illness, or injury<br><br>
+Excessively using diet pills, laxatives, or diuretics <br><br>
+Throwing up after eating – Frequently disappearing after meals or going to the bathroom. May run the water to disguise sounds of vomiting or reappear smelling like mouthwash or mints.
+
+</p>
+
+    <script>
+        function sclose1(){          
+$('#large1').toggleClass('expand');
+$('#large1').toggleClass('mobileheight');
+$('#img,#more').toggleClass('hide'); 
+ $('#rotate').toggleClass('rotated');
+  }
+        </script>
+       
+        <div>
+            <div class="tip rotated" id="sclose1"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
+        </div>
+    </div>
+               
+    </div>
+    </ons-row>         
+             
+</div>  
+
+<div id="bulimia">            
+<ons-row style="margin: 0; padding: 20px; background: #000;">  
+<div class="box1 full left10" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #fff; font-size: 26px"><b><span style="font-size: 34px;">Bulimia Nervosa</span>
+        </b><br><br><span style="color: #fff; font-size: 26px;">This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. <br><br>
+Men and women who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. <br><br>
+The binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of control. <br><br>
+Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart difficulties resulting from an electrolyte imbalance.
+
+</span>
+</p>
+    </div>
+</ons-row>            
+                    
+<ons-row style="margin: 0; padding: 20px; background: #000;">  
+
+<div class="reverse" style="width: 100%;">    
+    
+<div class="box1 half left3" style="padding: 0; font-size: 22px; background: #3a3535; position: relative">
+    
+    <p style="color: #fff; font-size: 26px"><b>Signs &amp; Symptoms</b>
+        </p>
+
+    <div class="large">
+            <script>
+     function rotate3(){
+     $('#large3').toggleClass('expand');
+    $('#rotate3').toggleClass('rotated');
+$('#img3,#more3').toggleClass('hide');   
+  }
+        </script>
+        <div class="tip" id="rotate3" onclick="rotate3()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more3">more</p>
+    </div>
+    
+        <div class="small">
+            <script>
+function srotate3(){
+$('#large3').toggleClass('expand');
+$('#large3').toggleClass('mobileheight');
+$('#img3').toggleClass('hide'); 
+  }
+        </script>
+        <div class="tip" id="srotate3" onclick="srotate3()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore3">more</p>
+    </div>
+
+    
+    </div>
+               
+    <div id="large3" onclick="sclose3()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
+        
+    <div style="background: #3a3535; margin: 0 auto; border-radius: 30px; width: 90%;">      
+        
+   <div id="img3" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #3a3535;">
+        </div>
+
+    <p style="color: #fff;"><b>Signs &amp; Symptoms</b>
+    </p>
+        
+    <p style="color: #fff">Being preoccupied with your body shape and weight<br><br>
+Living in fear of gaining weight<br><br>
+Repeated episodes of eating abnormally large amounts of food in one sitting<br><br>
+Feeling a loss of control during bingeing — like you can't stop eating or can't control what you eat<br><br>
+Forcing oneself to vomit or exercising too much to keep from gaining weight after bingeing<br><br>
+Using laxatives, diuretics or enemas after eating when they're not needed<br><br>
+Excessive fasting, restricting calories or avoiding certain foods between binges<br><br>
+Using dietary supplements or herbal products excessively for weight loss
+</p>
+
+    <script>
+function sclose3(){
+$('#large3').toggleClass('expand');
+$('#large3').toggleClass('mobileheight');
+$('#img3,#more3').toggleClass('hide'); 
+ $('#rotate3').toggleClass('rotated');    
+
+  }
+        </script>
+       
+        <div>
+            <div class="tip rotated" id="sclose3"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
+
+    </div>
+    </div>          
+    </div>
+    </ons-row>        
+                    
+</div>            
+                     
+<div id="binge">
+<ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+<div class="box1 full left10" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Binge Eating Disorder</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">Binge eating disorder is a common eating disorder where you frequently eat large amounts of food while feeling powerless to stop and extremely distressed during or after eating. <br><br>
+You may eat to the point of discomfort, then be plagued by feelings of guilt, shame, or depression afterwards, beat yourself up for your lack of self-control, or worry about what compulsive eating will do to your body.<br><br>
+Binge eating disorder typically begins in late adolescence or early adulthood, often after a major diet. <br><br>
+During a binge, you may eat even when you’re not hungry and continue eating long after you’re full. You may also binge so fast that you barely register what you’re eating or tasting. <br><br>
+Unlike bulimia, however, there are no regular attempts to “make up” for the binges through vomiting, fasting, or over-exercising.
+
+
+</span>
+</p>
+    </div>
+</ons-row>                        
+
+<ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
+
+<div class="reverse" style="width: 100%;">    
+    
+<div class="box1 half left3" style="padding: 0; font-size: 22px; background: #39375b; position: relative">
+    
+    <p style="color: #fff; font-size: 26px"><b>Signs &amp; Symptoms</b>
+        </p>
+
+    <div class="large">
+            <script>
+function rotate5(){
+$('#large5').toggleClass('expand');
+    $('#rotate5').toggleClass('rotated');
+$('#img5,#more5').toggleClass('hide');   
+  }
+        </script>
+        <div class="tip" id="rotate5" onclick="rotate5()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more5">more</p>
+    </div>
+    
+        <div class="small">
+            <script>
+function srotate5(){
+$('#large5').toggleClass('expand');
+$('#large5').toggleClass('mobileheight');
+$('#img5').toggleClass('hide'); 
+  }
+        </script>
+        <div class="tip" id="srotate5" onclick="srotate5()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore5">more</p>
+    </div>
+
+    
+    </div>
+               
+    <div id="large5" onclick="sclose5()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
+        
+        <div style="background: #39375b; margin: 0 auto; border-radius: 30px; width: 90%;">  
+        
+   <div id="img5" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #39375b;">
+
+        </div>
+
+    <p style="color: #fff;"><b>Signs &amp; Symptoms</b>
+    </p>
+        
+    <p style="color: #fff">Continually eating even when full<br><br>
+Inability to stop eating or control what is eaten<br><br>
+Stockpiling food to consume secretly at a later time<br><br>
+Eating normally in the presence of others but gorging when isolated<br><br>
+Experiencing feelings of stress or anxiety that can only be relieved by eating<br><br>
+Feelings of numbness or lack of sensation while bingeing<br><br>
+Never experiencing satisfaction, no matter the amount of food consumed
+</p>
+
+    <script>
+function sclose5(){           
+$('#large5').toggleClass('expand');
+$('#large5').toggleClass('mobileheight');
+$('#img5,#more5').toggleClass('hide'); 
+ $('#rotate5').toggleClass('rotated');
+  }
+        </script>
+       
+        <div>
+            <div class="tip rotated" id="sclose5"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
+
+    </div>
+               
+    </div></div>
+    </ons-row>        
+    
+                   
+</div>       
+            
+<ons-row style="margin: 0; padding: 20px; background: #000;">  
+<div class="box1 half left10" style="padding: 0; font-size: 22px;">
+    
+    <p style="color: #fff; font-size: 26px"><b><span style="font-size: 34px;">Seek Professional Help</span>
+        </b><br><br><span style="color: #fff; font-size: 26px;">If you feel that you are not getting better, do seek professional help.<br><br>
+The professional will be able to provide you with the suitable recovery plan and advice.
+</span>
+</p>
+
+      
+
+    </div>
+               
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+    
+    <p style="color: #000; font-size: 26px; padding: 40px;">
+</p>
+
+
+      
+
+    </div></ons-row>
+
+        </ons-list>
+    </div>
+</ons-page>
+
+    
+</template>    
+    
+<template id="tips2.html" style="overflow-x: hidden">
+    
+    <ons-page id="tips2">
+    
+  <ons-toolbar>
+    <div class="left">
+<ons-back-button></ons-back-button>
+    </div>
+    <div class="center">Eating Disorders</div>
+      
+              <div class="right">
+                   <ons-toolbar-button onclick="loadPage('home.html')">Home</ons-toolbar-button>
+      </div>
+  </ons-toolbar>
+    <div>
+        <ons-list>
 <ons-row style="margin: 0; padding: 20px;background: #000;">  
 <div class="box1 half left1" style="padding: 0; font-size: 22px;">
     
@@ -154,7 +1253,7 @@ Eating disturbances may include inadequate or excessive food intake which can ul
             
 <ons-row style="text-align: center; background-color: #000">  
 <ons-col class="box1" width="" style="padding: 40px 0; font-size: 26px">
-    <ons-fab id="horiz0" class="buton0" modifier="mini" style="background: red;" onclick="anorexia()">
+    <ons-fab id="horiz10" class="buton0" modifier="mini" style="background: red;" onclick="anorexia2()">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
     <p style="font-size: 26px; padding: 10px 0; color: #fff; font-weight: 500;">anorexia nervosa</p>
@@ -162,14 +1261,14 @@ Eating disturbances may include inadequate or excessive food intake which can ul
     </ons-col>  
                                    
 <ons-col class="box1" width="" style="padding: 40px 0; font-size: 26px">
-    <ons-fab id="horiz1" class="buton0" modifier="mini" style="background: orange;" onclick="bulimia()">
+    <ons-fab id="horiz11" class="buton0" modifier="mini" style="background: orange;" onclick="bulimia2()">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
     <p style="font-size: 26px; padding: 10px 0; color: #fff;; font-weight: 500;">bulimia</p>
 
     </ons-col>  
 <ons-col class="box1" width="" style="padding: 40px 0; font-size: 26px">
-    <ons-fab id="horiz2" class="buton0" modifier="mini" style="background: green;" onclick="binge()">
+    <ons-fab id="horiz21" class="buton0" modifier="mini" style="background: green;" onclick="binge2()">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
     <p style="font-size: 26px; padding: 10px 0; color: #fff;; font-weight: 500;">binge eating disorder</p>
@@ -722,35 +1821,8 @@ Eating disturbances may include inadequate or excessive food intake which can ul
   </ons-carousel>
 
     </ons-row>
-       
-            <div id="vert" class="buton" style="position: absolute; top: 0; width: 100%; height: auto">
-<ons-fab onclick="anorexia()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 104px; background: red;">
-                      <ons-icon icon="md-plus"></ons-icon>
-  </ons-fab>
-            
-<ons-fab onclick="bulimia()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 164px; background: orange;">
-                      <ons-icon icon="md-plus"></ons-icon>
-  </ons-fab>
-            
-<ons-fab onclick="binge()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 224px;background: green;">
-                      <ons-icon icon="md-plus"></ons-icon>
-  </ons-fab>
-            
-<div style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 99px; right: 20px; z-index: 900; text-align: right; font-weight: 600; padding"> 
-                <p>Anorexia Nervosa</p>
-            </div>
-            
-<div id="bulimia1" style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 159px; right: 20px; z-index: 900; text-align: right; font-weight: 600;"> 
-                <p>Bulimia</p>
-            </div>
-            
-<div id="binge1" style="margin: 0; padding: 0px 60px 0px 20px; color: #fff; position: fixed; top: 219px; right: 20px; z-index: 900; text-align: right; font-weight: 600;"> 
-                <p>Binge Eating Disorder</p>
-            </div>
-                
-            </div>
-            
-<div id="anorexia">            
+          
+<div id="anorexia2">            
 <ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
 <div class="box1 full left10" style="padding: 0; font-size: 22px;">
     
@@ -919,7 +1991,7 @@ $('#img2,#more2').toggleClass('hide');
     </ons-row>                
 </div>  
 
-<div id="bulimia">            
+<div id="bulimia2">            
 <ons-row style="margin: 0; padding: 20px; background: #000;">  
 <div class="box1 full left10" style="padding: 0; font-size: 22px;">
     
@@ -1089,7 +2161,7 @@ $('#img4,#more4').toggleClass('hide');
 </div>            
             
             
-<div id="binge">
+<div id="binge2">
 <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
 <div class="box1 full left10" style="padding: 0; font-size: 22px;">
     
@@ -1490,4 +2562,9 @@ The professional will be able to provide you with the suitable recovery plan and
 
         </ons-list>
     </div>
+</ons-page>
+
+    
+    
+</template>
 </ons-page>
