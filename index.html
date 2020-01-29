@@ -40,12 +40,19 @@ function changeTab() {
 function changeTab2() {
   document.getElementById('panictabbar').setActiveTab(1);
 }
-         //set for the rest as well!!
+            
+function changeTab3() {
+  document.getElementById('tipstabbar').setActiveTab(1);
+}
+            
+function changeTab4() {
+  document.getElementById('deptabbar').setActiveTab(1);
+}   
+            
+function changeTab5() {
+  document.getElementById('gadtabbar').setActiveTab(1);
+}               
 
-        function hideMe() {
-    document.getElementById('OCDtabbar').setTabbarVisibility(false);       
-} 
-        
         function showModal() {
   var modal = document.querySelector('ons-modal');
   modal.show();
@@ -55,49 +62,42 @@ function changeTab2() {
   var modal = document.querySelector('ons-modal');
   modal.hide();
 }
-               
-        
-        </script>   
 
-<script type="text/javascript">
+    </script>
+    <!--<script>               
 document.addEventListener('init', function(e) {
   var scrollValue = 0;
   var page = e.target;
   
-  page.querySelector('#tipstab').addEventListener('scroll', function (e) {
+  page.querySelector('.page__content').addEventListener('scroll', function (e) {
     var delta = this.scrollTop - scrollValue;0;
     if (Math.abs(delta) > 1000) {
-      console.log(delta, scrollValue);
-    document.getElementById('vert1').style.width = 100;
-        document.getElementById('vert2').style.width = 100;
+    document.getElementById('vert1').style.display = "block";
+    document.getElementById('vert2').style.display = "block";
 }
     
     else  {
-    document.getElementById('vert1').style.width = 0;
-        document.getElementById('vert2').style.width = 0;
+    document.getElementById('vert1').style.display = "none";
+    document.getElementById('vert2').style.display = "none";
     }
       
   });
 })
-</script>
-        
-
+    </script>-->
     <style>  
-
-        
-        #horiz {
-         opacity: 1;
-            transition: 1s;
+     
+#horiz {
+        opacity: 1;
+        transition: 1s;
         background: #000;
         }    
-        #vert1 , #vert2 {
-            display: none;
+#vert1, #vert2 {
+display: none;
+transition: 1s;
         }
-        
-        
-        
+     
 .buton0{
-opacity: 0.7;
+opacity: 0.5;
 transition: 1s;
 }       
 .buton0:hover{
