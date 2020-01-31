@@ -64,26 +64,7 @@ function changeTab5() {
 }
 
     </script>
-    <!--<script>               
-document.addEventListener('init', function(e) {
-  var scrollValue = 0;
-  var page = e.target;
-  
-  page.querySelector('.page__content').addEventListener('scroll', function (e) {
-    var delta = this.scrollTop - scrollValue;0;
-    if (Math.abs(delta) > 1000) {
-    document.getElementById('vert1').style.display = "block";
-    document.getElementById('vert2').style.display = "block";
-}
     
-    else  {
-    document.getElementById('vert1').style.display = "none";
-    document.getElementById('vert2').style.display = "none";
-    }
-      
-  });
-})
-    </script>-->
     <style>  
      
 #horiz {
@@ -91,19 +72,18 @@ document.addEventListener('init', function(e) {
         transition: 1s;
         background: #000;
         }    
-#vert1, #vert2 {
-display: none;
-transition: 1s;
-        }
+        
+   
+        
      
 .buton0{
-opacity: 0.5;
+opacity: 0;
 transition: 1s;
 }       
 .buton0:hover{
 opacity: 1;
 transition: 1s;   
-z-index: 101;
+
 }        
         
         
@@ -117,7 +97,7 @@ transition: 1s ease-in-out;
 background: rgba(0,0,0,0.7);
 border-radius: 30px;
 transition: 1s;
-z-index: 101;
+
 }      
  
 
@@ -267,43 +247,6 @@ z-index: 101;
             color: #000;
         }
 
-        
-.tick
-{ -webkit-animation: tick 2s infinite; /* Safari 4+ */
-  -moz-animation:    tick 2s infinite; /* Fx 5+ */
-  -o-animation:      tick 2s infinite; /* Opera 12+ */
-  animation:         tick 2s infinite; /* IE 10+, Fx 29+ */
-
-}
-        
-#playbutton
-{ -webkit-animation: tick2 2s infinite ease-out; /* Safari 4+ */
-  -moz-animation:    tick2 2s infinite ease-out; /* Fx 5+ */
-  -o-animation:      tick2 2s infinite ease-out; /* Opera 12+ */
-  animation:         tick2 2s infinite ease-out; /* IE 10+, Fx 29+ */
-
-} 
-        
-    @-webkit-keyframes tick2 {
-  0% {
-    color: #3f0000;
-  }
-  50% {
-    color: darkred;
-    }
-  100% {
-    color: #3f0000;
-  }
-}  
-
-@-webkit-keyframes tick {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    }
-}  
 
 .line
 { -webkit-animation: line 2s infinite; /* Safari 4+ */
@@ -337,93 +280,7 @@ transform-origin:left;
   backface-visibility: visible;
 }
 
-.front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
-  transform-style: preserve-3d;
-  position: absolute;
-    width: 10vw;
-    height: 13vw;
-  top: 0; left: 0;
-  transform-origin: left center;
-  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
-}
-
-.front, .back {
-  background: navy;
-}
-
-.front, .page1, .page3, .page5 {
-  border-bottom-right-radius: .5em;
-  border-top-right-radius: .5em;
-}
-
-.back, .page2, .page4, .page6 {
-  border-bottom-right-radius: .5em;
-  border-top-right-radius: .5em;
-}
-
-.page1 { 
-  background: #efefef;
-}
-
-.page2 {
-  background: #efefef;
-}
-
-.page3 {
-  background: #f5f5f5;
-}
-
-.page4 {
-  background: #f5f5f5;
-}
-
-.page5 {
-  background: #fafafa;
-}
-
-.page6 {
-  background: #fdfdfd;
-}    
-
-.book:hover .front, .book:active .front {
-  transform: rotateY(-160deg) scale(1.1);
-  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-}
-
-.book:hover .page1, .book:active page1 {
-  transform: rotateY(-150deg) scale(1.1);
-  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-}
-
-.book:hover .page2, .book:active page2 {
-  transform: rotateY(-30deg) scale(1.1);
-  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-}
-
-.book:hover .page3, .book:active page3 {
-  transform: rotateY(-140deg) scale(1.1);
-  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-}
-
-.book:hover .page4, .book:active page4 {
-  transform: rotateY(-40deg) scale(1.1);
-  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-}
-
-.book:hover .page5, .book:active page5 {
-  transform: rotateY(-130deg) scale(1.1);
-  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-}
-
-.book:hover .page6, .book:active page6 {
-  transform: rotateY(-50deg) scale(1.1);
-  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-}
-
-.book:hover .back, .book:active back {
-  transform: rotateY(-20deg) scale(1.1);
-}
-        
+   
         
         .hand{
             animation: hands 2s infinite ease-out;
@@ -1875,7 +1732,10 @@ border: 3px solid transparent ;
         }
    
         
-        
+            
+    #aa{
+        transform: translateY(150px);
+    }
 @media only screen and (max-width: 850px) {
     
             #video.expand{
@@ -1893,8 +1753,13 @@ border: 3px solid transparent ;
         width: 100%;
     }
             .aa p{
-             width: 95%; position: fixed; bottom: 10px; right: 0px;
+            width: 95%;
+            position: fixed;
+            bottom: 10px;
+            right: 0px;
+
         }
+
 
     
     table{

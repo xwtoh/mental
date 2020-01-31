@@ -3,11 +3,7 @@
   <script>
 
       
-      document.addEventListener('prechange', function(event) {
-  document.querySelector('ons-toolbar .center')
-    .innerHTML = event.tabItem.getAttribute('label');
-});
-                
+   
         var prev10 = function() {
   var carousel10 = document.getElementById('carousel-2');
   carousel10.prev();
@@ -92,26 +88,147 @@ document.getElementById('anorexia2').scrollIntoView();
 document.getElementById('binge2').scrollIntoView();}
 
 
-         document.addEventListener('show', function(event) {
+         
+
+
+
+</script> 
+    
+        <script>               
+document.addEventListener('init', function(e) {
+  var scrollValue = 0;
+  var page = e.target;
+
+page.querySelector('.page__content').addEventListener('scroll', function (e) {
+    var delta2 = this.scrollTop - scrollValue;0;
 var index = document.querySelector('#tipstabbar').getActiveTabIndex()
 
-  if (index === 0) {
-document.getElementById('vert1').style.display = "block";
-document.getElementById('vert2').style.display = "none";
+    if (Math.abs(delta2) >= 500 && index === 0){
+document.getElementById('horiz0').style.transform = "translate(500px,-50px)";
+document.getElementById('horiz0').style.transition = "3s";
+document.getElementById('horiz0').style.opacity = 0;  
+        
+document.getElementById('horiz1').style.transform = "translateX(200px)";
+document.getElementById('horiz1').style.transition = "3s";
+document.getElementById('horiz1').style.opacity = 0;  
     
-  } else if (index === 1) {
-document.getElementById('vert2').style.display = "block";
-document.getElementById('vert1').style.display = "none";
-  }
-    else{
-document.getElementById('vert1').style.display = "block";
-document.getElementById('vert2').style.display = "none";
+document.getElementById('horiz2').style.transform = "translate(75px,50px)";
+document.getElementById('horiz2').style.transition = "3s";
+document.getElementById('horiz2').style.opacity = 0;  
+        
+document.getElementById('0horiz').style.transform = "translate(50px,-60px)";
+document.getElementById('0horiz').style.transition = "3s";
+document.getElementById('0horiz').style.opacity = 1;  
+        
+document.getElementById('1horiz').style.transform = "translateX(50px)";
+document.getElementById('1horiz').style.transition = "3s";
+document.getElementById('1horiz').style.opacity = 1;  
+        
+document.getElementById('2horiz').style.transform = "translate(50px,60px)";
+document.getElementById('2horiz').style.transition = "3s";
+document.getElementById('2horiz').style.opacity = 1;  
+        
+        
+document.getElementById('horiz10').style.display = "none";
+document.getElementById('horiz11').style.display = "none";         
+document.getElementById('horiz20').style.display = "none";     
+        
+        console.log("case1");   
+}
+    
+    else if (Math.abs(delta2) >= 500 && index === 1) {
+
+document.getElementById('horiz10').style.transform = "translate(500px,-50px)";
+document.getElementById('horiz10').style.transition = "3s";
+document.getElementById('horiz10').style.opacity = 0;  
+        
+document.getElementById('horiz11').style.transform = "translateX(200px)";
+document.getElementById('horiz11').style.transition = "3s";
+document.getElementById('horiz11').style.opacity = 0;  
+    
+document.getElementById('horiz20').style.transform = "translate(75px,50px)";
+document.getElementById('horiz20').style.transition = "3s";
+document.getElementById('horiz20').style.opacity = 0;  
+        
+document.getElementById('10horiz').style.transform = "translate(50px,-60px)";
+document.getElementById('10horiz').style.transition = "3s";
+document.getElementById('10horiz').style.opacity = 1;  
+        
+document.getElementById('11horiz').style.transform = "translateX(50px)";
+document.getElementById('11horiz').style.transition = "3s";
+document.getElementById('11horiz').style.opacity = 1;  
+        
+document.getElementById('20horiz').style.transform = "translate(50px,60px)";
+document.getElementById('20horiz').style.transition = "3s";
+document.getElementById('20horiz').style.opacity = 1;  
+        
+document.getElementById('10horiz').style.display = "none";
+document.getElementById('11horiz').style.display = "none";         
+document.getElementById('20horiz').style.display = "none";    
+         
+        console.log("case2");
+        
     }
 
+else {
+document.getElementById('horiz0').style.transform = "translateX(0)";
+document.getElementById('horiz0').style.transition = "3s";
+document.getElementById('horiz0').style.opacity = 1;  
+        
+document.getElementById('horiz1').style.transform = "translateX(0)";
+document.getElementById('horiz1').style.transition = "3s";
+document.getElementById('horiz1').style.opacity = 1;  
+    
+document.getElementById('horiz2').style.transform = "translateX(0)";
+document.getElementById('horiz2').style.transition = "3s";
+document.getElementById('horiz2').style.opacity = 1;  
+        
+document.getElementById('0horiz').style.transform = "translateX(0)";
+document.getElementById('0horiz').style.transition = "3s";
+document.getElementById('0horiz').style.opacity = 0;  
+        
+document.getElementById('1horiz').style.transform = "translateX(0)";
+document.getElementById('1horiz').style.transition = "3s";
+document.getElementById('1horiz').style.opacity = 0;  
+        
+document.getElementById('2horiz').style.transform = "translateX(0)";
+document.getElementById('2horiz').style.transition = "3s";
+document.getElementById('2horiz').style.opacity = 0;  
+        
+document.getElementById('horiz10').style.transform = "translateX(0)";
+document.getElementById('horiz10').style.transition = "3s";
+document.getElementById('horiz10').style.opacity = 1;  
+        
+document.getElementById('horiz11').style.transform = "translateX(0)";
+document.getElementById('horiz11').style.transition = "3s";
+document.getElementById('horiz11').style.opacity = 1;  
+    
+document.getElementById('horiz20').style.transform = "translateX(0)";
+document.getElementById('horiz20').style.transition = "3s";
+document.getElementById('horiz20').style.opacity = 1;  
+        
+document.getElementById('10horiz').style.transform = "translateX(0)";
+document.getElementById('10horiz').style.transition = "3s";
+document.getElementById('10horiz').style.opacity = 0;  
+        
+document.getElementById('11horiz').style.transform = "translateX(0)";
+document.getElementById('11horiz').style.transition = "3s";
+document.getElementById('11horiz').style.opacity = 0;  
+        
+document.getElementById('20horiz').style.transform = "translateX(0)";
+document.getElementById('20horiz').style.transition = "3s";
+document.getElementById('20horiz').style.opacity = 0;  
+            
+    
+        console.log("case3");
+}
+      
+  });      
 })
 
-</script>       
-                <script>
+    </script>
+          
+<!--      <script>
        function rotate(){
     $('#large1').toggleClass('expand');
     $('#rotate').toggleClass('rotated');
@@ -316,7 +433,6 @@ $('#img9,#more9').toggleClass('hide');
   }
         </script>
 
-<!--
                 <script>
        function changesize(){
     $('#video').toggleClass('expand');
@@ -337,15 +453,15 @@ $('#img9,#more9').toggleClass('hide');
     
            
             <div id="vert1" class="buton" style="position: absolute; top: 0; right: 0; width: 100%; height: auto">
-<ons-fab id="anorexiabut"  onclick="anorexia()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 104px; background: red;">
+<ons-fab id="0horiz"  onclick="anorexia()" class="buton0" modifier="mini" style="position: fixed; right: 75px; top: 164px; background: red;">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
             
-<ons-fab id="bulimiabut" onclick="bulimia()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 164px; background: orange;">
+<ons-fab id="1horiz" onclick="bulimia()" class="buton0" modifier="mini" style="position: fixed; right: 75px; top: 164px; background: orange;">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
             
-<ons-fab id="bingebut" onclick="binge()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 224px;background: green;">
+<ons-fab id="2horiz" onclick="binge()" class="buton0" modifier="mini" style="position: fixed; right: 75px; top: 164px;background: green;">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
             
@@ -364,15 +480,15 @@ $('#img9,#more9').toggleClass('hide');
             </div>
     
            <div id="vert2" class="buton" style="position: absolute; top: 0; right: 0; width: 100%; height: auto">
-<ons-fab id="anorexiabut"  onclick="anorexia2()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 104px; background: red;">
+<ons-fab id="10horiz"  onclick="anorexia2()" class="buton0" modifier="mini" style="position: fixed; right: 75px; top: 164px; background: red;">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
             
-<ons-fab id="bulimiabut" onclick="bulimia2()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 164px; background: orange;">
+<ons-fab id="11horiz" onclick="bulimia2()" class="buton0" modifier="mini" style="position: fixed; right: 75px; top: 164px; background: orange;">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
             
-<ons-fab id="bingebut" onclick="binge2()" class="buton0" modifier="mini" style="position: fixed; right: 25px; top: 224px;background: green;">
+<ons-fab id="20horiz" onclick="binge2()" class="buton0" modifier="mini" style="position: fixed; right: 75px; top: 164px;background: green;">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
             
@@ -425,46 +541,17 @@ $('#img9,#more9').toggleClass('hide');
       
 
     </div>
-               
-    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+<div class="box1 half right1" style="padding: 0; font-size: 22px; background: #333; border-radius: 10px;">
     
-    <p>
-</p>    </div>
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>General Signs</b><br><br><span style="font-size: 15.4px; font-weight: bold">
+&#8226;&nbsp;Those with eating disorders typically become pre-occupied with food and their body weight, and tend to be perfectionists with low self-esteem and are extremely critical of themselves and their bodies.<br><br>
+&#8226;&nbsp;An intense fear of gaining weight and of being fat may become all-pervasive.<br><br>
+In early stages, one may often deny that they have a problem. Eating disturbances may include inadequate or excessive food intake which can ultimately damage an individual’s well-being.
+            </span></p>
+
+        </div> 
             </ons-row>
 
-
-    <ons-row style="margin: 0; padding: 20px; background: #000;">  
-<div class="box1 half left1" style="padding: 0; font-size: 22px; background: #333;">
-    
-    <p style="color: #fff; font-size: 26px"><b>Signs
-        </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;">
-</span>
-</p>
-
-      
-
-    </div>
-               
-    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
-    
-    <p style="color: #fff; font-size: 22px"><b>
-        </b><span style="color: #000; font-size: 70%; font-weight: bold;">
-&#8226;&nbsp;Those with eating disorders typically become pre-occupied with food and their body weight, and tend to be perfectionists with low self-esteem and are extremely critical of themselves and their bodies.<br>
-&#8226;&nbsp;An intense fear of gaining weight and of being fat may become all-pervasive.<br><br>
-In early stages, one may often deny that they have a problem.<br>
-Eating disturbances may include inadequate or excessive food intake which can ultimately damage an individual’s well-being.
-        </span>
-</p>
-
-      
-
-    </div>
-               
-
-    </ons-row>
-                
-          
-    
 <ons-row style="text-align: center; background-color: #000">  
 <ons-col class="box1" width="100%" style="padding: 40px 0; font-size: 26px">
     
@@ -1308,7 +1395,7 @@ $('#img3,#more3').toggleClass('hide');
                      
 <div id="binge">
 <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
-<div class="box1 full left10" style="padding: 0; font-size: 22px;">
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
     
     <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Binge Eating Disorder</span>
         </b><br><br><span style="color: #000; font-size: 26px;">Binge eating disorder is a common eating disorder where you frequently eat large amounts of food while feeling powerless to stop and extremely distressed during or after eating. <br><br>
@@ -1321,8 +1408,23 @@ Unlike bulimia, however, there are no regular attempts to “make up” for the
 </span>
 </p>
     </div>
-</ons-row>                        
+    
+                   <div class="box1 half right1" style="padding: 0; font-size: 22px; background: darkblue; border-radius: 10px;">
+    
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>Signs</b><br><br><span style="font-size: 15.4px; font-weight: bold">Continually eating even when full<br><br>
+Inability to stop eating or control what is eaten<br><br>
+Stockpiling food to consume secretly at a later time<br><br>
+Eating normally in the presence of others but gorging when isolated<br><br>
+Experiencing feelings of stress or anxiety that can only be relieved by eating<br><br>
+Feelings of numbness or lack of sensation while bingeing<br><br>
+Never experiencing satisfaction, no matter the amount of food consumed
+            </span></p>
 
+    </div>    
+    
+    
+</ons-row>                        
+<!--
 <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
 
 <div class="reverse" style="width: 100%;">    
@@ -1392,16 +1494,16 @@ $('#img5,#more5').toggleClass('hide');
     </div>
                
     </div></div>
-    </ons-row>        
+    </ons-row>      -->  
     
                    
 </div>       
             
-<ons-row style="margin: 0; padding: 20px; background: #000;">  
+<ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
 <div class="box1 half left10" style="padding: 0; font-size: 22px;">
     
-    <p style="color: #fff; font-size: 26px"><b><span style="font-size: 34px;">Seek Professional Help</span>
-        </b><br><br><span style="color: #fff; font-size: 26px;">If you feel that you are not getting better, do seek professional help.<br><br>
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Seek Professional Help</span>
+        </b><br><br><span style="color: #000; font-size: 26px;">If you feel that you are not getting better, do seek professional help.<br><br>
 The professional will be able to provide you with the suitable recovery plan and advice.
 </span>
 </p>
@@ -1419,7 +1521,14 @@ The professional will be able to provide you with the suitable recovery plan and
       
 
     </div></ons-row>
-
+    <ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+      <div class="full" style="width: 100%; text-align: center; margin: 20px;">
+          <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; color: #ff7e67; font-size: 15.4px"><b>Swipe for more info</b>&nbsp;&nbsp;&nbsp;&nbsp;<ons-icon size="18px" icon="md-long-arrow-tab"></ons-icon></p>
+    
+        </div>
+        
+        </ons-row>
+    
         </ons-list>
     </div>
 </ons-page>
@@ -1521,7 +1630,7 @@ Eating disturbances may include inadequate or excessive food intake which can ul
 
     </ons-col>  
 <ons-col class="box1" width="" style="padding: 0 0 40px 0; font-size: 26px">
-    <ons-fab id="horiz21" class="" modifier="mini" style="background: green;" onclick="binge2()">
+    <ons-fab id="horiz20" class="" modifier="mini" style="background: green;" onclick="binge2()">
                       <ons-icon icon="md-plus"></ons-icon>
   </ons-fab>
     <p style="font-size: 15.4px; padding: 10px 0; color: #fff;; font-weight: bold;">binge eating disorder</p>
@@ -1533,10 +1642,10 @@ Eating disturbances may include inadequate or excessive food intake which can ul
             
 <div id="anorexia2">            
 <ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
-<div class="box1 full left10" style="padding: 0; font-size: 22px;">
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
     
-    <p style="color: #000; font-size: 22px"><b><span style="font-size: 34px;">Anorexia Nervosa</span>
-        </b><br><br><span style="color: #000; font-size: 70%; font-weight: bold;">When one has an obsessive fear of gaining weight, refusal to maintain a healthy body weight and an unrealistic perception of body image. <br><br>
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Anorexia Nervosa</span>
+        </b><br><br><span style="color: #000;">When one has an obsessive fear of gaining weight, refusal to maintain a healthy body weight and an unrealistic perception of body image. <br><br>
 Many people with anorexia nervosa will fiercely limit the quantity of food they consume and view themselves as overweight, even when they are clearly underweight. <br><br>
 Anorexia can have damaging health effects, such as brain damage, multi-organ failure, bone loss, heart difficulties, and infertility. <br><br>
 The risk of death is highest in individuals with this disease.
@@ -1546,11 +1655,30 @@ The risk of death is highest in individuals with this disease.
       
 
     </div>
+
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: darkblue; border-radius: 10px;">
+    
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>Self-Help Tips</b><br><br><span style="font-size: 15.4px; font-weight: bold"><u>Admit you have a problem</u><br> The first step in anorexia recovery is admitting that your relentless pursuit of thinness is out of your control and acknowledging the physical and emotional damage that you’ve suffered because of it.
+<br><br>
+                
+                <u>Talk to Someone you can trust</u><br>It can be hard to talk about what you’re going through, especially if you’ve kept your anorexia a secret for a long time. <br>
+You may be ashamed, ambivalent, or afraid. But it’s important to understand that you’re not alone. <br>
+Find a good listener—Someone who will support you as you try to heal.
+<br><br>
+
+                <u>Stay away from people, places and activities that trigger your obsession with being thin</u><br>You may need to avoid looking at fashion or fitness magazines, spend less time with friends who constantly diet and talk about losing weight, and stay away from weight loss websites that promote anorexia.
+<br><br>
+
+<u>Seek professional help</u><br>
+The advice and support of trained eating disorder professionals can help you regain your health, learn to eat normally again, and develop healthier attitudes about food and your body.</span></p>
+
+    </div>    
+    
                
             
             </ons-row>
   
-                        
+<!--                        
 <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
 
 <div class="reverse" style="width: 100%;">    
@@ -1625,15 +1753,15 @@ $('#img2,#more2').toggleClass('hide');
     </div>
     </div>   
     </div>
-    </ons-row>                
+    </ons-row>     -->           
 </div>  
 
 <div id="bulimia2">            
-<ons-row style="margin: 0; padding: 20px; background: #000;">  
-<div class="box1 full left10" style="padding: 0; font-size: 22px;">
+<ons-row style="margin: 0; padding: 20px; background: #EAEAEA;">  
+<div class="box1 half left10" style="padding: 0; font-size: 22px;">
     
-    <p style="color: #fff; font-size: 22px"><b><span style="font-size: 34px;">Bulimia Nervosa</span>
-        </b><br><br><span style="color: #fff; font-size: 70%; font-weight: bold;">This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. <br><br>
+    <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Bulimia Nervosa</span>
+        </b><br><br><span style="color: #000;">This eating disorder is characterized by repeated binge eating followed by behaviours that compensate for the overeating, such as forced vomiting, excessive exercise, or extreme use of laxatives or diuretics. <br><br>
 Men and women who suffer from Bulimia may fear weight gain and feel severely unhappy with their body size and shape. <br><br>
 The binge-eating and purging cycle is typically done in secret, creating feelings of shame, guilt, and lack of control. <br><br>
 Bulimia can have injuring effects, such as gastrointestinal problems, severe dehydration, and heart difficulties resulting from an electrolyte imbalance.
@@ -1641,8 +1769,31 @@ Bulimia can have injuring effects, such as gastrointestinal problems, severe de
 </span>
 </p>
     </div>
+    
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: darkblue; border-radius: 10px;">
+    
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>Self-Help Tips</b><br><br><span style="font-size: 15.4px; font-weight: bold">
+        <u>Learn about bulimia</u><br>Education about your condition can empower you and motivate you to stick to your recovery plan.<br><br> 
+
+        <u>Get the right nutrition</u><br>If you aren't eating well or you're frequently purging, it's likely your body isn't getting all of the nutrients it needs. Talk to your primary care provider or dietitian about appropriate vitamin and mineral supplements. <br>
+However, getting most of your vitamins and minerals from food is typically recommended.
+<br><br>
+        
+        <u>Stay in touch</u><br>Don't isolate yourself from caring family members and friends who want to see you get healthy. Understand that they have your best interests at heart and that nurturing, caring relationships are healthy for you.<br><br>
+        
+        <u>Be kind to yourself</u><br>Resist urges to weigh yourself or check yourself in the mirror frequently. These may do nothing but fuel your drive to maintain unhealthy habits.
+<br><br>
+        <u>Be cautious with exercise</u><br>Talk to your primary care provider about what kind of physical activity, if any, is appropriate for you, especially if you exercise excessively to burn off post-binge calories.
+<br><br>
+        
+<u>Seek professional help</u><br>See a professional who will be able to guide you on the right steps to recovery.<br>
+Stick to your treatment plan. Don't skip therapy sessions and try not to stray from meal plans, even if they make you uncomfortable.</span></p>
+
+    </div> 
+    
+    
 </ons-row>             
-                   
+<!--                   
 <ons-row style="margin: 0; padding: 20px; background: #000;">  
 
 <div class="reverse" style="width: 100%;">    
@@ -1722,16 +1873,16 @@ $('#img4,#more4').toggleClass('hide');
     </div>           
     </div>
     </div>
-    </ons-row>   
+    </ons-row>  --> 
 </div>            
             
             
 <div id="binge2">
 <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
-<div class="box1 full left10" style="padding: 0; font-size: 22px;">
+<div class="box1 half left1" style="padding: 0; font-size: 22px;">
     
     <p style="color: #000; font-size: 26px"><b><span style="font-size: 34px;">Binge Eating Disorder</span>
-        </b><br><br><span style="color: #000; font-size: 70%; font-weight: bold;">Binge eating disorder is a common eating disorder where you frequently eat large amounts of food while feeling powerless to stop and extremely distressed during or after eating. <br><br>
+        </b><br><br><span style="color: #000;">Binge eating disorder is a common eating disorder where you frequently eat large amounts of food while feeling powerless to stop and extremely distressed during or after eating. <br><br>
 You may eat to the point of discomfort, then be plagued by feelings of guilt, shame, or depression afterwards, beat yourself up for your lack of self-control, or worry about what compulsive eating will do to your body.<br><br>
 Binge eating disorder typically begins in late adolescence or early adulthood, often after a major diet. <br><br>
 During a binge, you may eat even when you’re not hungry and continue eating long after you’re full. You may also binge so fast that you barely register what you’re eating or tasting. <br><br>
@@ -1741,83 +1892,71 @@ Unlike bulimia, however, there are no regular attempts to “make up” for the
 </span>
 </p>
     </div>
-</ons-row>                        
+    
+    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: darkblue; border-radius: 10px;">
+    
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>Self-Help Tips</b><br><br><span style="font-size: 15.4px; font-weight: bold">
+      Develop a healthier relationship with food<br><br>
 
+<u>Avoid temptation</u>. You’re much more likely to overeat if you have junk food, desserts, and unhealthy snacks in the house. Remove the temptation by clearing your fridge and cupboards of your favourite binge foods.<br><br>
+<u>Listening to your body</u>. Learn to distinguish between physical and emotional hunger. If you ate recently and don’t have a rumbling stomach, you’re probably not really hungry. Give the craving time to pass.<br><br>
+<u>Eating regularly</u>. Don’t wait until you’re starving. This only leads to overeating! Stick to scheduled mealtimes, as skipping meals often leads to binge eating later in the day.
+<br><br><u>Fighting boredom</u>. Instead of snacking when you’re bored, distract yourself. Take a walk, call a friend, read, or take up a hobby such as painting or gardening.<br><br>
+<u>Focusing on what you’re eating</u>. How often have you binged in an almost trance-like state, not even enjoying what you’re consuming? Instead of eating mindlessly, be a mindful eater. Slow down and savour the textures and flavours. Not only will you eat less, you’ll enjoy it more.
+</span></p>
 
+    </div>     
+    
+</ons-row>  
+    
+    
 <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
-
-<div class="reverse" style="width: 100%;">    
     
-<div class="box1 half left3" style="padding: 0; font-size: 22px; background: #39375b; position: relative">
+    <div class="box1 full right1" style="padding: 0; font-size: 22px; background: darkblue; border-radius: 10px;">
     
-    <p style="color: #fff; font-size: 26px"><b>Self-help Tip 1</b>
-        </p>
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>Self-Help Tips</b><br><br><span style="font-size: 15.4px; font-weight: bold">
+      Develop a healthier relationship with food<br><br>
 
-    <div class="large">
-            <script>
-function rotate6(){
-    $('#large6').toggleClass('expand');
-    $('#rotate6').toggleClass('rotated');
-$('#img6,#more6').toggleClass('hide');   
-  }
-        </script>
-        <div class="tip" id="rotate6" onclick="rotate6()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 40px 10px" id="more6">more</p>
-    </div>
+<u>Avoid temptation</u>. You’re much more likely to overeat if you have junk food, desserts, and unhealthy snacks in the house. Remove the temptation by clearing your fridge and cupboards of your favourite binge foods.<br><br>
+<u>Listening to your body</u>. Learn to distinguish between physical and emotional hunger. If you ate recently and don’t have a rumbling stomach, you’re probably not really hungry. Give the craving time to pass.<br><br>
+<u>Eating regularly</u>. Don’t wait until you’re starving. This only leads to overeating! Stick to scheduled mealtimes, as skipping meals often leads to binge eating later in the day.
+<br><br><u>Fighting boredom</u>. Instead of snacking when you’re bored, distract yourself. Take a walk, call a friend, read, or take up a hobby such as painting or gardening.<br><br>
+<u>Focusing on what you’re eating</u>. How often have you binged in an almost trance-like state, not even enjoying what you’re consuming? Instead of eating mindlessly, be a mindful eater. Slow down and savour the textures and flavours. Not only will you eat less, you’ll enjoy it more.
+</span></p>
+
+    </div>     
     
-        <div class="small">
-            <script>
-function srotate6(){
-$('#large6').toggleClass('expand');
-$('#large6').toggleClass('mobileheight');
-$('#img6').toggleClass('hide'); 
-  }
-        </script>
-        <div class="tip" id="srotate6" onclick="srotate6()"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px" id="smore6">more</p>
-    </div>
-
+    <div class="box1 full right1" style="padding: 0; font-size: 22px; background: darkblue; border-radius: 10px;">
     
-    </div>
-               
-    <div id="large6" onclick="sclose6()" class="box1 half right3 mobileheight" style="padding: 0; font-size: 22px; background: rgba(0, 0, 0, 0.7);">
-        
-        
-    <div style="background: #39375b; margin: 0 auto; border-radius: 30px; width: 90%;">  
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>Self-Help Tips</b><br><br><span style="font-size: 15.4px; font-weight: bold">
+      Develop a healthier relationship with food<br><br>
+
+<u>Avoid temptation</u>. You’re much more likely to overeat if you have junk food, desserts, and unhealthy snacks in the house. Remove the temptation by clearing your fridge and cupboards of your favourite binge foods.<br><br>
+<u>Listening to your body</u>. Learn to distinguish between physical and emotional hunger. If you ate recently and don’t have a rumbling stomach, you’re probably not really hungry. Give the craving time to pass.<br><br>
+<u>Eating regularly</u>. Don’t wait until you’re starving. This only leads to overeating! Stick to scheduled mealtimes, as skipping meals often leads to binge eating later in the day.
+<br><br><u>Fighting boredom</u>. Instead of snacking when you’re bored, distract yourself. Take a walk, call a friend, read, or take up a hobby such as painting or gardening.<br><br>
+<u>Focusing on what you’re eating</u>. How often have you binged in an almost trance-like state, not even enjoying what you’re consuming? Instead of eating mindlessly, be a mindful eater. Slow down and savour the textures and flavours. Not only will you eat less, you’ll enjoy it more.
+</span></p>
+
+    </div> 
     
-        
-   <div id="img6" class="box1 half right3" style="padding: 0; font-size: 22px;height: 100%; width: 100%; position: absolute; left: 0; top: 0; background: #39375b">
-        </div>
+    <div class="box1 full right1" style="padding: 0; font-size: 22px; background: darkblue; border-radius: 10px;">
+    
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>Self-Help Tips</b><br><br><span style="font-size: 15.4px; font-weight: bold">
+      Develop a healthier relationship with food<br><br>
 
-    <p style="color: #fff;"><b>Self-help Tip 1</b>
-    </p>
-        
-        <p style="color: #fff"><b>Develop a healthier relationship with food</b><br><br>
+<u>Avoid temptation</u>. You’re much more likely to overeat if you have junk food, desserts, and unhealthy snacks in the house. Remove the temptation by clearing your fridge and cupboards of your favourite binge foods.<br><br>
+<u>Listening to your body</u>. Learn to distinguish between physical and emotional hunger. If you ate recently and don’t have a rumbling stomach, you’re probably not really hungry. Give the craving time to pass.<br><br>
+<u>Eating regularly</u>. Don’t wait until you’re starving. This only leads to overeating! Stick to scheduled mealtimes, as skipping meals often leads to binge eating later in the day.
+<br><br><u>Fighting boredom</u>. Instead of snacking when you’re bored, distract yourself. Take a walk, call a friend, read, or take up a hobby such as painting or gardening.<br><br>
+<u>Focusing on what you’re eating</u>. How often have you binged in an almost trance-like state, not even enjoying what you’re consuming? Instead of eating mindlessly, be a mindful eater. Slow down and savour the textures and flavours. Not only will you eat less, you’ll enjoy it more.
+</span></p>
 
-<b>Avoid temptation.</b> You’re much more likely to overeat if you have junk food, desserts, and unhealthy snacks in the house. Remove the temptation by clearing your fridge and cupboards of your favourite binge foods.<br><br>
-<b>Listening to your body.</b> Learn to distinguish between physical and emotional hunger. If you ate recently and don’t have a rumbling stomach, you’re probably not really hungry. Give the craving time to pass.<br><br>
-<b>Eating regularly.</b> Don’t wait until you’re starving. This only leads to overeating! Stick to scheduled mealtimes, as skipping meals often leads to binge eating later in the day.
-<br><br><b>Fighting boredom</b>. Instead of snacking when you’re bored, distract yourself. Take a walk, call a friend, read, or take up a hobby such as painting or gardening.<br><br>
-<b>Focusing on what you’re eating.</b> How often have you binged in an almost trance-like state, not even enjoying what you’re consuming? Instead of eating mindlessly, be a mindful eater. Slow down and savour the textures and flavours. Not only will you eat less, you’ll enjoy it more.
+    </div>     
+    
+</ons-row>  
 
-        
-        
-</p>
-
-    <script>
-function sclose6(){           
-$('#large6').toggleClass('expand');
-$('#large6').toggleClass('mobileheight');
-$('#img6,#more6').toggleClass('hide'); 
- $('#rotate6').toggleClass('rotated');
-  }
-        </script>
-       
-        <div>
-            <div class="tip rotated" id="sclose6"><ons-icon icon="md-plus"></ons-icon></div><p style="color: #fff; display: inline-block; padding: 20px 10px">close</p></div>
-
-    </div>
-               
-    </div></div>
-    </ons-row>                   
+                
 
 <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
 
@@ -2054,7 +2193,14 @@ The professional will be able to provide you with the suitable recovery plan and
       
 
     </div></ons-row>
-
+    <ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+      <div class="full" style="width: 100%; text-align: center; margin: 20px;">
+          <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; color: #ff7e67; font-size: 15.4px"><b>Swipe for more info</b>&nbsp;&nbsp;&nbsp;&nbsp;<ons-icon rotate="180" size="18px" icon="md-long-arrow-tab"></ons-icon></p>
+    
+        </div>
+        
+        </ons-row>
+    
         </ons-list>
     </div>
 </ons-page>
