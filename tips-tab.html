@@ -94,6 +94,29 @@ document.getElementById('binge2').scrollIntoView();}
 
 </script> 
     
+      <!--  <script>
+        document.addEventListener('init', function(event) {
+var indexx = document.querySelector('#tipstabbar').getActiveTabIndex()
+        
+    if (indexx === 0) {
+        document.getElementById('vert1').style.display = "block";
+        document.getElementById('vert2').style.display = "none";
+    }   
+        else if (indexx === 1){
+             document.getElementById('vert2').style.display = "block";
+        document.getElementById('vert1').style.display = "none";       
+        }
+            else{
+                      document.getElementById('vert2').style.display = "none";
+        document.getElementById('vert1').style.display = "none";        
+                
+            }
+            
+            
+});
+    </script>
+    
+    -->
         <script>               
 document.addEventListener('init', function(e) {
   var scrollValue = 0;
@@ -105,33 +128,36 @@ var index = document.querySelector('#tipstabbar').getActiveTabIndex()
 
     if (Math.abs(delta2) >= 500 && index === 0){
 document.getElementById('horiz0').style.transform = "translate(500px,-50px)";
-document.getElementById('horiz0').style.transition = "3s";
+document.getElementById('horiz0').style.transition = "2s";
 document.getElementById('horiz0').style.opacity = 0;  
         
 document.getElementById('horiz1').style.transform = "translateX(200px)";
-document.getElementById('horiz1').style.transition = "3s";
+document.getElementById('horiz1').style.transition = "2s";
 document.getElementById('horiz1').style.opacity = 0;  
     
 document.getElementById('horiz2').style.transform = "translate(75px,50px)";
-document.getElementById('horiz2').style.transition = "3s";
+document.getElementById('horiz2').style.transition = "2s";
 document.getElementById('horiz2').style.opacity = 0;  
         
 document.getElementById('0horiz').style.transform = "translate(50px,-60px)";
-document.getElementById('0horiz').style.transition = "3s";
+document.getElementById('0horiz').style.transition = "2s";
 document.getElementById('0horiz').style.opacity = 1;  
         
 document.getElementById('1horiz').style.transform = "translateX(50px)";
-document.getElementById('1horiz').style.transition = "3s";
+document.getElementById('1horiz').style.transition = "2s";
 document.getElementById('1horiz').style.opacity = 1;  
         
 document.getElementById('2horiz').style.transform = "translate(50px,60px)";
-document.getElementById('2horiz').style.transition = "3s";
+document.getElementById('2horiz').style.transition = "2s";
 document.getElementById('2horiz').style.opacity = 1;  
         
+document.getElementById('horiz10').style.opacity = 0;
+document.getElementById('horiz11').style.opacity = 0;         
+document.getElementById('horiz20').style.opacity = 0;  
+document.getElementById('horiz10').style.transition = "0s";  
+document.getElementById('horiz11').style.transition = "0s";  
+document.getElementById('horiz20').style.transition = "0s";  
         
-document.getElementById('horiz10').style.display = "none";
-document.getElementById('horiz11').style.display = "none";         
-document.getElementById('horiz20').style.display = "none";     
         
         console.log("case1");   
 }
@@ -139,84 +165,86 @@ document.getElementById('horiz20').style.display = "none";
     else if (Math.abs(delta2) >= 500 && index === 1) {
 
 document.getElementById('horiz10').style.transform = "translate(500px,-50px)";
-document.getElementById('horiz10').style.transition = "3s";
+document.getElementById('horiz10').style.transition = "2s";
 document.getElementById('horiz10').style.opacity = 0;  
         
 document.getElementById('horiz11').style.transform = "translateX(200px)";
-document.getElementById('horiz11').style.transition = "3s";
+document.getElementById('horiz11').style.transition = "2s";
 document.getElementById('horiz11').style.opacity = 0;  
     
 document.getElementById('horiz20').style.transform = "translate(75px,50px)";
-document.getElementById('horiz20').style.transition = "3s";
+document.getElementById('horiz20').style.transition = "2s";
 document.getElementById('horiz20').style.opacity = 0;  
         
 document.getElementById('10horiz').style.transform = "translate(50px,-60px)";
-document.getElementById('10horiz').style.transition = "3s";
+document.getElementById('10horiz').style.transition = "2s";
 document.getElementById('10horiz').style.opacity = 1;  
         
 document.getElementById('11horiz').style.transform = "translateX(50px)";
-document.getElementById('11horiz').style.transition = "3s";
+document.getElementById('11horiz').style.transition = "2s";
 document.getElementById('11horiz').style.opacity = 1;  
         
 document.getElementById('20horiz').style.transform = "translate(50px,60px)";
-document.getElementById('20horiz').style.transition = "3s";
+document.getElementById('20horiz').style.transition = "2s";
 document.getElementById('20horiz').style.opacity = 1;  
         
-document.getElementById('10horiz').style.display = "none";
-document.getElementById('11horiz').style.display = "none";         
-document.getElementById('20horiz').style.display = "none";    
-         
+document.getElementById('0horiz').style.opacity = 0;
+document.getElementById('1horiz').style.opacity = 0;         
+document.getElementById('2horiz').style.opacity = 0; 
+document.getElementById('0horiz').style.transition = "0s";  
+document.getElementById('1horiz').style.transition = "0s";  
+document.getElementById('2horiz').style.transition = "0s";  
         console.log("case2");
         
     }
 
 else {
 document.getElementById('horiz0').style.transform = "translateX(0)";
-document.getElementById('horiz0').style.transition = "3s";
+document.getElementById('horiz0').style.transition = "0s";
 document.getElementById('horiz0').style.opacity = 1;  
         
 document.getElementById('horiz1').style.transform = "translateX(0)";
-document.getElementById('horiz1').style.transition = "3s";
+document.getElementById('horiz1').style.transition = "0s";
 document.getElementById('horiz1').style.opacity = 1;  
     
 document.getElementById('horiz2').style.transform = "translateX(0)";
-document.getElementById('horiz2').style.transition = "3s";
+document.getElementById('horiz2').style.transition = "0s";
 document.getElementById('horiz2').style.opacity = 1;  
         
 document.getElementById('0horiz').style.transform = "translateX(0)";
-document.getElementById('0horiz').style.transition = "3s";
+document.getElementById('0horiz').style.transition = "0s";
 document.getElementById('0horiz').style.opacity = 0;  
         
 document.getElementById('1horiz').style.transform = "translateX(0)";
-document.getElementById('1horiz').style.transition = "3s";
+document.getElementById('1horiz').style.transition = "0s";
 document.getElementById('1horiz').style.opacity = 0;  
         
 document.getElementById('2horiz').style.transform = "translateX(0)";
-document.getElementById('2horiz').style.transition = "3s";
+document.getElementById('2horiz').style.transition = "0s";
 document.getElementById('2horiz').style.opacity = 0;  
         
 document.getElementById('horiz10').style.transform = "translateX(0)";
-document.getElementById('horiz10').style.transition = "3s";
+document.getElementById('horiz10').style.transition = "0s";
 document.getElementById('horiz10').style.opacity = 1;  
         
 document.getElementById('horiz11').style.transform = "translateX(0)";
-document.getElementById('horiz11').style.transition = "3s";
+document.getElementById('horiz11').style.transition = "0s";
 document.getElementById('horiz11').style.opacity = 1;  
     
 document.getElementById('horiz20').style.transform = "translateX(0)";
-document.getElementById('horiz20').style.transition = "3s";
+document.getElementById('horiz20').style.transition = "0s";
 document.getElementById('horiz20').style.opacity = 1;  
         
 document.getElementById('10horiz').style.transform = "translateX(0)";
-document.getElementById('10horiz').style.transition = "3s";
+document.getElementById('10horiz').style.transition = "0s";
 document.getElementById('10horiz').style.opacity = 0;  
         
 document.getElementById('11horiz').style.transform = "translateX(0)";
-document.getElementById('11horiz').style.transition = "3s";
+document.getElementById('11horiz').style.transition = "0s";
 document.getElementById('11horiz').style.opacity = 0;  
         
 document.getElementById('20horiz').style.transform = "translateX(0)";
-document.getElementById('20horiz').style.transition = "3s";
+document.getElementById('20horiz').style.transition = "0s";
 document.getElementById('20horiz').style.opacity = 0;  
             
     
@@ -227,6 +255,8 @@ document.getElementById('20horiz').style.opacity = 0;
 })
 
     </script>
+    
+
           
 <!--      <script>
        function rotate(){
