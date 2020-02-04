@@ -65,6 +65,30 @@ function changeTab5() {
 
 
     </script>
+    
+                <script>               
+document.addEventListener('init', function(e) {
+  var page = e.target;
+page.querySelector('.page__content').addEventListener('scroll', function (e) {
+    
+     var delta = this.scrollTop;
+    
+    if (Math.abs(this.scrollTop) >= 100){
+    document.getElementById('aa').style.transform = "translateY(0px)";
+    document.getElementById('aa').style.transition = "1s";
+            console.log(delta);  
+}
+
+else {
+document.getElementById('aa').style.transform = "translateY(150px)";
+document.getElementById('aa').style.transition = "1s";
+    console.log(delta);  
+}
+      
+  });      
+})
+
+    </script>
   <!--  
 <script>               
 
@@ -1832,6 +1856,7 @@ border: 3px solid transparent ;
             
     #aa{
         transform: translateY(150px);
+        -webkit-transform: translateY(150px);
     }
     
     
