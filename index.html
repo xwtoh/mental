@@ -63,17 +63,113 @@ function changeTab5() {
   modal.hide();
 }
 
+
+    </script>
+  <!--  
+<script>               
+
+    
+    document.addEventListener('init', function(event) {
+  var page = event.target;
+
+  page.onInfiniteScroll = function(done) {
+document.querySelector('ons-tabbar').setTabbarVisibility(true);
+      // you're at the bottom of the page
+      console.log("Bottom of page");
+      done();
+
+}});
+
     </script>
     
-    <style>  
+
+
+
+
+        <script>               
+document.addEventListener('init', function(e) {
+  var scrollValue = 0;
+  var page = e.target;
+
+page.querySelector('.page__content').addEventListener('scroll', function (e) {
+    var delta2 = this.scrollTop - scrollValue;0;
+
+    if (Math.abs(delta2) >= 500){
+        document.querySelector('ons-toolbar').setTabbarVisibility(false);
+        console.log("case10");   
+}
+
+else {
+    document.querySelector('ons-toolbar').setTabbarVisibility(true);
+        console.log("case30");
+}
+      
+  });      
+})
+
+    </script>-->
+    
+<style>  
      
+#modal0{
+transform: translateY(calc(100vh));
+position: fixed;
+bottom: 0;
+z-index:9999;
+transition-duration: 1s;
+height: 100vh;
+width: 100vw;
+opacity: 1;
+        }
+    
+#modal0:hover #modal0 p :before{
+background: rgba(0, 0, 0, 0.5);
+        }
+    
+    #modal0 p ::before{
+        height: 5px;
+        background: rgba(0, 0, 0, 1);
+        text-align: center;
+        padding: 0;
+        content: "\00a0";
+        width: 10%;
+        position: absolute;
+        top: -10px;
+        border-radius: 30px;
+        margin: 0;
+        display: block;
+        left: 45%;
+    }      
+    
+    #modal0 p{
+        background: black;
+        color: white;
+        font-size: 15.4px;
+        font-weight: bold;
+        padding: 50px;
+        border-radius: 10px;
+        margin: 0 25px 5px 5px;
+        position: fixed;
+        bottom: 0;
+    }    
+    
+#modal0.expand{
+transform: translateY(0);
+height: 100vh;
+width: 100%;
+bottom: 0;
+max-height: 1000px;
+transition-duration: 1s;
+        }     
+        
+        
 #horiz {
         opacity: 1;
         transition: 1s;
         background: #000;
         }    
         
-        #0horiz, #1horiz, #2horiz, #10horiz, #11horiz, #20horiz {opacity: 0;}
+#0horiz, #1horiz, #2horiz, #10horiz, #11horiz, #20horiz {opacity: 0;}
         
      
 .buton0{
@@ -1670,11 +1766,11 @@ border: 3px solid transparent ;
             
         }
         
-        #video{
+        #video, #video2, #video3 {
             display: block;
             margin: 0;
         }
-        #video.expand{
+        #video.expand, #video2.expand{
         position: fixed;
         right: 0;
         bottom: 0;
@@ -1684,19 +1780,19 @@ border: 3px solid transparent ;
         z-index: 998;
         margin: 0;
     }
-                #video1{
+        #video1, #video10, #video20 {
             min-height: 400px;
         }
         
-        #video1.mini{
+        #video1.mini, #video10.mini, #video20.mini {
             min-height: 0px;
         }
         
-        #space0{
+        #space0, #space1, #space2 {
             display: none;
         }
         
-        #space0.mini{
+        #space0.mini, #space1.mini, #space2.mini{
             display: block;
         }
         
@@ -1736,9 +1832,23 @@ border: 3px solid transparent ;
     #aa{
         transform: translateY(150px);
     }
+    
+    
 @media only screen and (max-width: 850px) {
     
-            #video.expand{
+        #modal0 p{
+        background: black;
+        color: white;
+        font-size: 15.4px;
+        font-weight: bold;
+        padding: 50px;
+        border-radius: 10px;
+        margin: 0 5px 5px 5px;
+        position: fixed;
+        bottom: 0;
+    }    
+    
+            #video.expand, #video2.expand, #video3.expand {
         position: fixed;
         right: 0;
         bottom: 0;

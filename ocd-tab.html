@@ -11,6 +11,14 @@
 
   </script>
     
+    <script>
+  document.addEventListener('swipedown', function(event) {
+    if (event.target.matches('#modal0')) {
+     $('#modal0').toggleClass('expand');
+    }
+  });
+</script>
+    
                 <script>
        function changesize(){
     $('#video').toggleClass('expand');
@@ -19,6 +27,12 @@
         $('#video1').toggleClass('mini');
         $('#space0').toggleClass('mini');
 }
+                    
+                    
+function showModal() {
+$('#modal0').toggleClass('expand');
+}
+                    
         </script>
           <script>        var prev10 = function() {
   var carousel10 = document.getElementById('carousel-2');
@@ -380,6 +394,24 @@ ERP requires you to repeatedly expose yourself to the source of your obsession â
     </div>
     </ons-row>
 
+<ons-gesture-detector>
+          <div onclick="showModal()" id="modal0">
+
+       
+ 
+            
+            <p>
+        By repeatedly exposing yourself to your OCD triggers, you can learn to resist the urge to complete your compulsive rituals. This is known asÂ <u><i>exposure &amp; response prevention (ERP)</i></u>.<br>
+
+        
+        <br>
+ERP requires you to repeatedly expose yourself to the source of your obsession â€” and then refrain from the compulsive behaviour youâ€™d usually perform to reduce your anxiety.
+            </p>
+
+              
+  </div>
+    </ons-gesture-detector>        
+ 
 
         <ons-row style="margin: 0; padding: 20px; background: #eaeaea;">  
 <div class="box1 half left1" style="padding: 0; font-size: 22px; background: #ff7e67;">
@@ -388,10 +420,10 @@ ERP requires you to repeatedly expose yourself to the source of your obsession â
         </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
 </p>
     
-                      <a href="https://iocdf.org/about-ocd/ocd-treatment/erp/" target="_blank"><div class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;">
+                     <div onclick="showModal()" class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;">
     <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>More info on ERP</b></p>
     
-                          </div></a>
+                          </div>
     
     
     </div>
