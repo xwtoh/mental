@@ -20,12 +20,17 @@
         $('#space0').toggleClass('mini');
 }
                     
+
+function showModal2() {
+  var x = document.getElementById("modal0");
+  if (x.style.transform === "translateY(calc(100vh))") {
+    x.style.transform = "translateY(0)";
+  } else {
+    x.style.transform = "translateY(calc(100vh))";
+  }
+}                    
                     
-function showModal() {
-document.getElementById('modal0').style.transform = "translateY(0)";
-document.getElementById('modal0').style.transition = "1s";
-}
-                    
+                   
         </script>
           <script>        var prev10 = function() {
   var carousel10 = document.getElementById('carousel-2');
@@ -388,7 +393,7 @@ ERP requires you to repeatedly expose yourself to the source of your obsession â
     </ons-row>
 
 
-          <div style="position: fixed; width: 100%; bottom: 0; height: 100vh; z-index: 9999; transition-duration: 1s;" onclick="showModal()" id="modal0">
+          <div style="position: fixed; width: 100%; bottom: 0; height: auto; z-index: 9999; transition-duration: 1s; transform: translateY(calc(100vh))" onclick="showModal2()" id="modal0">
 
        
  
@@ -413,7 +418,8 @@ ERP requires you to repeatedly expose yourself to the source of your obsession â
         </b><br><br><span style="color: #fff; font-size: 22px; font-weight: 300;"></span>
 </p>
     
-                     <div onclick="showModal()" class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;">
+    
+    <div onclick="showModal2()" class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;">
     <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>More info on ERP</b></p>
     
                           </div>
