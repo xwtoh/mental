@@ -122,7 +122,7 @@ Other symptoms include trembling, feeling like you can't breathe, being afraid y
       </div>
   </ons-toolbar>
     
-            <ons-modal style="background: #000">
+            <ons-modal class="mod">
               <div id="breathe" onclick="hideModal()" style="height: 100vh">
                 
        <div id="contain">
@@ -138,11 +138,11 @@ Other symptoms include trembling, feeling like you can't breathe, being afraid y
 </div>
     
               
-<div style="width: 100%; position: absolute; bottom: 5px;">
-<p style="color: #fff; font-size: 15.4px; font-weight: bold; background: #fff; color: #000; padding: 0 20px; border-radius: 30px; margin: 0 10px">Breathe in and out in tandem with the expansion and contraction of the graphic!</p></div>
+<div style="width: 100%; position: absolute; bottom: 20px;">
+<p style="color: #fff; font-size: 15.4px; font-weight: bold; color: #fff; margin: 0 20px">Breathe in and out in tandem with the expansion and contraction of the graphic!</p></div>
                    
              
-<div class="tip rotated" id="rotate98" onclick="hideModal();" style="margin-left: 20px; position: absolute; top: 0; right: 0; background: #000"><ons-icon icon="md-plus"></ons-icon></div>    
+<div class="tip rotated" id="rotate98" onclick="hideModal();" style="margin-left: 20px; position: absolute; top: 20px; right: 20px; background: transparent;"><ons-icon icon="md-plus"></ons-icon></div>    
     
     </ons-modal>
        
@@ -205,7 +205,7 @@ If you are not sure how to do proper breathing, there are phone apps and meditat
 
 </p>
 
-    <div class="tip" id="rotate99" onclick="showModal();myToast.toggle()" style="border-color: #000; margin-left: 20px;"><ons-icon style="color: #000;" icon="md-plus"></ons-icon></div><p style="color: #000; display: inline-block; padding: 40px 10px; font-weight: 500" id="more">try this!</p>
+    <div class="tip" id="rotate99" onclick="showModal()" style="border-color: #000; margin-left: 20px;"><ons-icon style="color: #000;" icon="md-plus"></ons-icon></div><p style="color: #000; display: inline-block; padding: 40px 10px; font-weight: 500" id="more" onclick="showModal()">try this!</p>
 
 
         

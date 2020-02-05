@@ -117,7 +117,7 @@ else {
     
 #modal0 p ::before{
         height: 5px;
-        background: rgba(0, 0, 0, 1);
+background-color: rgba(0, 0, 0, 0.4);   
         text-align: center;
         padding: 0;
         content: "\00a0";
@@ -131,7 +131,14 @@ else {
     }      
 
 #modal0
-{transform: translateY(calc(100vh));}
+{transform: translateY(calc(100vh));
+    }
+    
+    #modalpara{
+        -webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+background-color: rgba(0, 0, 0, 0.7);   
+    }    
     
 #horiz {
         opacity: 1;
@@ -1358,7 +1365,12 @@ border: 3px solid transparent ;
   height: 100%;
   justify-content: center;
 }
-
+.mod
+{
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+background-color: rgba(0, 0, 0, 0.9);   
+}
 
         
 .containerx {
@@ -1698,7 +1710,7 @@ border: 3px solid transparent ;
   background: transparent;
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 60%;
   justify-content: center;
 }
         
