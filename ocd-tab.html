@@ -24,12 +24,10 @@ function showModal2() {
   var y = document.getElementById("modal0p");
 
     
-  if (x.style.transform === "scaleY(1)") {
-    x.style.transform = "scaleY(0)";
-    x.style.color = "#000"
+  if (x.style.transform === "translateY(calc(100vh))") {
+    x.style.transform = "translateY(0)";
   } else {
-    x.style.transform = "scaleY(1)";
-    x.style.color = "#fff"
+    x.style.transform = "translateY(calc(100vh))";
   }
 }                    
                     
@@ -51,12 +49,12 @@ var next10 = function() {
      <ons-tab page="ocd2.html" label="Tips" icon="md-help"></ons-tab>
   </ons-tabbar>
 
-              <div style="position: fixed; width: 100%; bottom: 0; height: auto; z-index: 100; transition-duration: 1s; transform: scaleY(0); transform-origin: bottom;" onclick="showModal2()" id="modal0">
+              <div style="position: fixed; width: 100%; bottom: 0; height: auto; z-index: 100; transition-duration: 1s;" onclick="showModal2()" id="modal0">
 
        
  
             
-<p style="background: black; font-size: 15.4px; font-weight: bold; padding: 50px; border-radius: 10px; margin: 0 25px 5px 5px;">
+<p style="background: black; color: #fff ;font-size: 15.4px; font-weight: bold; padding: 50px; border-radius: 10px; margin: 0 25px 5px 5px;">
         By repeatedly exposing yourself to your OCD triggers, you can learn to resist the urge to complete your compulsive rituals. This is known as <u><i>exposure &amp; response prevention (ERP)</i></u>.<br>
 
         
