@@ -21,10 +21,10 @@
 
 function showModal2() {
   var x = document.getElementById("modal0");
-  if (x.style.transform === "translateY(calc(100vh))") {
-    x.style.transform = "translateY(0)";
+  if (x.style.transform === "scaleY(1)") {
+    x.style.transform = "scaleY(0)";
   } else {
-    x.style.transform = "translateY(calc(100vh))";
+    x.style.transform = "scaleY(1)";
   }
 }                    
                     
@@ -45,7 +45,8 @@ var next10 = function() {
     <ons-tab page="ocd.html" label="Signs" icon="md-menu"></ons-tab>
      <ons-tab page="ocd2.html" label="Tips" icon="md-help"></ons-tab>
   </ons-tabbar>
-              <div style="position: fixed; width: 100%; bottom: 0; height: auto; z-index: 100; transition-duration: 1s; transform: translateY(calc(100vh))" onclick="showModal2()" id="modal0">
+
+              <div style="position: fixed; width: 100%; bottom: 0; height: auto; z-index: 100; transition-duration: 1s; transform: scaleY(0); transform-origin: bottom;" onclick="showModal2()" id="modal0">
 
        
  
