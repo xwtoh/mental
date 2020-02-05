@@ -15,6 +15,61 @@
   </script>
     
     
+            <script>               
+document.addEventListener('init', function(e) {
+  var scrollValue = 0;
+  var page = e.target;
+
+page.querySelector('.page__content').addEventListener('scroll', function (e) {
+    var delta = this.scrollTop - scrollValue;0;
+
+
+    if (Math.abs(delta) >= 100 ){
+    document.getElementById('aa').style.transform = "translateY(0px)";
+    document.getElementById('aa').style.transition = "1s";
+        document.getElementById('aa').style.position = "fixed";
+        console.log("case1");   
+}
+
+
+else {
+
+    document.getElementById('aa').style.transform = "translateY(150px)";
+document.getElementById('aa').style.transition = "1s";
+document.getElementById('aa').style.position = "fixed";
+
+        console.log("case3");
+}
+      
+  });      
+})
+
+    </script>
+    <!--
+            <script>               
+document.addEventListener('init', function(e) {
+  var page = e.target;
+page.querySelector('.page__content').addEventListener('scroll', function (e) {
+    
+     var inner = document.getElementById('reveal-elements');
+    
+    if (inner >= 100){
+    document.getElementById('aa').style.transform = "translateY(0px)";
+    document.getElementById('aa').style.transition = "1s";
+            console.log(inner.offsetTop - document.body.scrollTop); 
+}
+
+else {
+document.getElementById('aa').style.transform = "translateY(150px)";
+document.getElementById('aa').style.transition = "1s";
+console.log(inner.offsetTop - document.body.scrollTop);
+}
+      
+  });      
+})
+
+    </script>-->
+    
     <ons-row style="display: none;">            
     <ons-input id="username" placeholder="Username" modifier="underbar"></ons-input>
     <ons-input
@@ -101,7 +156,7 @@
 
     </div></ons-row>   
            
-           <div class="aa full tfbutton" style="text-align: center; background: #eaeaea" onclick="login()">
+           <div id="aa" class="aa full tfbutton" style="text-align: center; background: #eaeaea;width: 200px; position: fixed; bottom: 20px; right: 40px;" onclick="login()">
     <p style="padding: 10px 0; background: white; border-radius: 30px; font-size: 100%; color: #00a3e0; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);margin: 10px;"><b>Begin</b></p>
     </div>
 

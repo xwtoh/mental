@@ -112,24 +112,14 @@ else {
     </script>-->
     
 <style>  
-     
-#modal0.expand{
-transform: translateY(calc(100vh));
--webkit-transform: translateY(calc(100vh));
-position: fixed;
-bottom: 0;
-z-index:9999;
-transition-duration: 1s;
-height: 100vh;
-width: 100vw;
-opacity: 1;
-        }
+    
+
     
 #modal0:hover #modal0 p :before{
 background: rgba(0, 0, 0, 0.5);
         }
     
-    #modal0 p ::before{
+#modal0 p ::before{
         height: 5px;
         background: rgba(0, 0, 0, 1);
         text-align: center;
@@ -159,12 +149,23 @@ background: rgba(0, 0, 0, 0.5);
 #modal0{
 transform: translateY(0);
 -webkit-transform: translateY(0);
-height: 100vh;
+position: fixed;
+height: 0;
 width: 100%;
 bottom: 0;
+z-index: 9999;
 transition-duration: 1s;
         }     
-        
+#modal0.expand{
+transform: translateY(calc(100vh));
+-webkit-transform: translateY(calc(100vh));
+position: fixed;
+bottom: 0;
+z-index: 9999;
+transition-duration: 1s;
+height: 100vh;
+width: 100%;
+        }        
         
 #horiz {
         opacity: 1;
