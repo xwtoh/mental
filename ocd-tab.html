@@ -41,7 +41,7 @@ document.getElementById("modal0").style.transform = "translateY(0)";
     <script>
   document.addEventListener('swipedown', function(event) {
     if (event.target.matches('#modal0')) {
-      console.log('Swipe left is detected.');
+    document.getElementById("modal0").style.transform = "translateY(calc(100))";;
     }
   });
 </script>
