@@ -24,18 +24,22 @@ function showModal2() {
     
   if (x.style.transform === "translateY(calc(100vh))") {
     x.style.transform = "translateY(0)";
+	x.style.transition = "2s ease";
   } else {
     x.style.transform = "translateY(calc(100vh))";
+	x.style.transition = "2s ease";
   }
 }                    
 
 function showModal20() {
-  var x = document.getElementById("modal10");
+  var y = document.getElementById("modal10");
     
-  if (x.style.transform === "translateY(calc(100vh))") {
-    x.style.transform = "translateY(0)";
+  if (y.style.transform === "translateY(calc(100vh))") {
+    y.style.transform = "translateY(0)";
+	y.style.transition = "2s ease";
   } else {
-    x.style.transform = "translateY(calc(100vh))";
+    y.style.transform = "translateY(calc(100vh))";
+	y.style.transition = "2s ease";
   }
 }                    
                     
@@ -58,12 +62,14 @@ document.getElementById("modal10").style.transition = "2s ease";
     $(document).on(eventName, '#modal0', function(event) {
       if (event.type !== 'swipedown') {
         document.getElementById("modal0").style.transform = "translateY(calc(100vh))";
+document.getElementById("modal0").style.transition = "2s ease";
       }
     });
                     
     $(document).on(eventName, '#modal10', function(event) {
       if (event.type !== 'swipedown') {
         document.getElementById("modal10").style.transform = "translateY(calc(100vh))";
+document.getElementById("modal10").style.transition = "2s ease";
       }
     });
  </script>                    
