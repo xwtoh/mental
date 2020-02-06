@@ -66,51 +66,6 @@ function changeTab5() {
 
     </script>
     
-    
-  <!--  
-<script>               
-
-    
-    document.addEventListener('init', function(event) {
-  var page = event.target;
-
-  page.onInfiniteScroll = function(done) {
-document.querySelector('ons-tabbar').setTabbarVisibility(true);
-      // you're at the bottom of the page
-      console.log("Bottom of page");
-      done();
-
-}});
-
-    </script>
-    
-
-
-
-
-        <script>               
-document.addEventListener('init', function(e) {
-  var scrollValue = 0;
-  var page = e.target;
-
-page.querySelector('.page__content').addEventListener('scroll', function (e) {
-    var delta2 = this.scrollTop - scrollValue;0;
-
-    if (Math.abs(delta2) >= 500){
-        document.querySelector('ons-toolbar').setTabbarVisibility(false);
-        console.log("case10");   
-}
-
-else {
-    document.querySelector('ons-toolbar').setTabbarVisibility(true);
-        console.log("case30");
-}
-      
-  });      
-})
-
-    </script>-->
-    
 <style>  
     
 
@@ -1448,6 +1403,8 @@ background-color: rgba(0, 0, 0, 0.9);
             margin: 20px; 
             width: 30vw;
             height: 30vw; 
+				max-height: 100px;
+				max-width: 100px;
             float: left;
             border-radius: 10px;
             font-size: 22px;
@@ -1474,7 +1431,9 @@ background-color: rgba(0, 0, 0, 0.9);
             margin: 20px; 
             width: 30vw; 
             height: 30vw; 
-            float: left;
+				max-height: 100px;
+				max-width: 100px;
+				float: left;
             border-radius: 10px;
             font-size: 22px;
             color: #fff; 
@@ -2020,7 +1979,7 @@ background-color: rgba(0, 0, 0, 0.9);
 <body>
     <ons-page>
 <ons-splitter>
-  <!-- The side menu -->
+  <!— The side menu —>
 <ons-splitter-side id="menu" collapse swipable>
 
   <ons-page>
@@ -2049,7 +2008,7 @@ background-color: rgba(0, 0, 0, 0.9);
   </ons-page>
 </ons-splitter-side>
 
-  <!-- Everything not in the side menu -->
+  <!— Everything not in the side menu —>
   <ons-splitter-content>
     <ons-navigator id="navigator" page="login.html"></ons-navigator>
   </ons-splitter-content>
