@@ -38,7 +38,22 @@ window.smoothScroll = function(target) {
 var next10 = function() {
   var carousel10 = document.getElementById('carousel-2');
   carousel10.next();
-};            
+};         
+      
+      
+      
+function para1() {
+  var z = document.getElementById("para1");
+    
+  if (z.style.maxHeight === "60vh") {
+    z.style.maxHeight = "none";
+	z.style.transition = "1s ease";
+  } else {
+    z.style.maxHeight = "60vh";
+	z.style.transition = "1s ease";
+  }
+}  
+  
     </script>
 
     <!--
@@ -117,12 +132,6 @@ var next10 = function() {
 </span>
 </p>
 
-      
-    
-<div class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;" onclick="next10()">
-    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67"><b>Example here</b></p>
-    
-        </div>
     </div>
                
     <div class="box1 half right1" style="padding: 0; font-size: 22px; background: #fff">
@@ -144,7 +153,10 @@ It can also trigger a wide range of physical symptoms such as:<br>
         </span>
 </p>
 
-      
+      <div class="full tfbutton" style="width: 50%; text-align: center; margin: 20px;" onclick="next10()">
+    <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; font-size: 70%; color: #ff7e67; border: 4px solid #ff7e67"><b>Example here</b></p>
+    
+        </div>
 
     </div>
                
@@ -528,17 +540,23 @@ A healthy, balanced lifestyle plays a big role in keeping the symptoms of GAD at
 
     </div>
                
-    <div class="box1 half right1" style="padding: 0; font-size: 22px; background: transparent;">
+<div class="box1 half right1" style="padding: 0; font-size: 22px; background: #333; border-radius: 10px; position: relative" id="para1">
     
-    <p style="color: #000; font-size: 26px; padding: 40px;">
-</p>
+        <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>When it becomes too severe</b><br><br><span style="font-size: 15.4px; font-weight: bold">
+There are effective treatments readily available for anxiety disorders, including both medication and psychotherapy. The aims of treatment are to reduce and eventually eliminate the signs and symptoms of anxiety disorders, and to restore psychosocial roles and occupational functioning.<br><br>
+Anxiety disorders respond well to treatment particularly if identified and treated early. There are effective medicines (prescribed by doctors), and when used with psychological therapies, can result in lowered risk of relapse and better symptom control. Effective psychological therapies include Cognitive Behaviour Therapy and Exposure and Response Prevention Therapies.<br><br>
+Lifestyle is also a crucial factor in treatment. People living in high-stress environments who possess poor coping strategies for day-to-day issues will find simple strategies, such as relaxation techniques and regular exercise, effective in reducing anxiety and contributing to emotional well-being.
 
-
-      
-
-    </div></ons-row>
+            </span></p>
     
-    <ons-row style="margin: 0; padding: 20px;background: #eaeaea;">  
+<div style="width: 100%; text-align: center; margin: 20px; position: absolute; bottom: 0; margin: 0; height: 80px; background: #333; vertical-align: middle; align-content: center; opacity: 1; text-align: center" onclick="para1()">
+    <p class="tfbutton" style=" width: 20px; margin: 25px auto auto auto; padding: 0 20px; background: #fff; border-radius: 30px; font-size: 70%; color: #000; align-content: center"><b>...</b></p>    
+        </div>
+
+        </div> 
+</ons-row>
+    
+    <ons-row style="margin: 0; padding: 20px;background-image: linear-gradient(black, #eaeaea);">  
       <div class="full" style="width: 100%; text-align: center; margin: 20px;">
           <p style="margin: 10px; padding: 10px 0; background: white; border-radius: 30px; color: #ff7e67; font-size: 15.4px"><b>Swipe for more info</b>&nbsp;&nbsp;&nbsp;&nbsp;<ons-icon rotate="180" size="18px" icon="md-long-arrow-tab"></ons-icon></p>
     

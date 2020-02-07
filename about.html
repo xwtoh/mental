@@ -1,6 +1,53 @@
 
 <ons-page id="about">
     
+  <!--  <script>
+    
+    function showModal100() {
+document.getElementById("modal100").style.transform = "translateY(0)";
+document.getElementById("modal100").style.transition = "1s ease";
+}  
+
+function showModal200() {
+  var y = document.getElementById("modal100");
+    
+  if (y.style.transform === "translateY(calc(100vh))") {
+    y.style.transform = "translateY(0)";
+	y.style.transition = "1s ease";
+  } else {
+    y.style.transform = "translateY(calc(100vh))";
+	y.style.transition = "1s ease";
+  }
+}   
+
+
+    var eventName = 
+      'drag dragleft dragright dragup dragdown hold release swipe swipeleft swiperight ' +
+      'swipeup swipedown tap doubletap touch transform pinch pinchin pinchout rotate';
+                    
+    $(document).on(eventName, '#modal100', function(event) {
+      if (event.type !== 'swipedown') {
+        document.getElementById("modal100").style.transform = "translateY(calc(100vh))";
+document.getElementById("modal100").style.transition = "1s ease";
+      }
+    });
+    </script>
+    
+    <ons-gesture-detector id="gesture3">
+<div style="position: fixed; width: 100%; bottom: 0px; height: auto; z-index: 100; transition-duration: 1s;" onclick="showModal200()" id="modal100">
+
+
+<div id="modalpara20" style="color: #fff ;font-size: 15.4px; font-weight: bold; padding: 20px; border-radius: 10px; margin: 0 5px 5px 5px; text-align: center; padding-bottom: 10px;">
+       <iframe style="height: 70vh; width: 100%; margin-bottom: 5px; border: 0;" src="https://booking.smu.edu.sg/"></iframe>
+    <p style="margin: auto; height: 14px; color: #000; border-radius: 30px; vertical-align: middle; text-align: center; line-height: 14px; width: auto; font-weight: 500;">close</p>
+
+            </div>
+
+              
+    </div></ons-gesture-detector>-->
+
+    
+    
     
     <div style="background: #000; height: 150vh;;">
 <ons-row style="margin: 0; padding: 20px;background: black;">  
@@ -24,8 +71,7 @@
     <ons-row style="margin: 0; padding: 20px;background: black;">  
 <div class="box1 half left1" style="padding: 0; font-size: 22px;">
     
-    <p style="color: #fff; font-size: 22px"><b><span style="font-size: 34px;">If you or a friend needs help</span>
-        </b><br><br><span style="font-size: 70%; font-weight: bold;">Do not hesistate to visit  Mrs Wong Kwok Leong Student Wellness Centre</span>
+    <p style="color: #fff; font-size: 22px"><b><span style="font-size: 34px;">If you or a friend needs help</span></b>
 </p>
 
       
@@ -47,11 +93,11 @@ Tel: 6828 0786<br>
         
 </p>
 
-
-      <a href="https://booking.smu.edu.sg/" target="_blank"><div class="full tfbutton" style="width: 50%; text-align: center; margin-left: 80px;margin-bottom: 80px;">
+<a href="https://booking.smu.edu.sg/" target="_blank">        
+<div onclick="showModal100()" class="full tfbutton" style="width: 50%; text-align: center; margin-left: 80px;margin-bottom: 80px;">
     <p style="margin: 10px; padding: 10px; background: white; border-radius: 30px; font-size: 70%; color: darkblue"><b>Make an appointment</b></p>
     
-          </div></a>
+    </div></a>
       
 
     </div>
