@@ -41,18 +41,11 @@ var next10 = function() {
 };         
       
       
-      
-function para1() {
-  var z = document.getElementById("para1");
-    
-  if (z.style.maxHeight === "60vh") {
-    z.style.maxHeight = "none";
-	z.style.transition = "1s ease";
-  } else {
-    z.style.maxHeight = "60vh";
-	z.style.transition = "1s ease";
-  }
-}  
+
+             function para1(){
+    $('#para1').toggleClass('expand');
+}
+                    
   
     </script>
 
@@ -540,7 +533,7 @@ A healthy, balanced lifestyle plays a big role in keeping the symptoms of GAD at
 
     </div>
                
-<div class="box1 half right1" style="padding: 0; font-size: 22px; background: #333; border-radius: 10px; position: relative" id="para1">
+<div class="box1 half right1" style="padding: 0; font-size: 22px; background: #333; border-radius: 10px; position: relative;" id="para1">
     
         <p style="color: #fff; font-size: 21px; padding: 40px; font-weight: 300; margin: 40px;"><b>When it becomes too severe</b><br><br><span style="font-size: 15.4px; font-weight: bold">
 There are effective treatments readily available for anxiety disorders, including both medication and psychotherapy. The aims of treatment are to reduce and eventually eliminate the signs and symptoms of anxiety disorders, and to restore psychosocial roles and occupational functioning.<br><br>
