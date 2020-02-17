@@ -14,31 +14,6 @@
     };
   </script>
 
-    <!--
-            <script>               
-document.addEventListener('init', function(e) {
-  var page = e.target;
-page.querySelector('.page__content').addEventListener('scroll', function (e) {
-    
-     var inner = document.getElementById('reveal-elements');
-    
-    if (inner >= 100){
-    document.getElementById('aa').style.transform = "translateY(0px)";
-    document.getElementById('aa').style.transition = "1s";
-            console.log(inner.offsetTop - document.body.scrollTop); 
-}
-
-else {
-document.getElementById('aa').style.transform = "translateY(150px)";
-document.getElementById('aa').style.transition = "1s";
-console.log(inner.offsetTop - document.body.scrollTop);
-}
-      
-  });      
-})
-
-    </script>-->
-    
     <ons-row style="display: none;">            
     <ons-input id="username" placeholder="Username" modifier="underbar"></ons-input>
     <ons-input
@@ -62,15 +37,12 @@ page.querySelector('.page__content').addEventListener('scroll', function () {
     document.getElementById('aa').style.transform = "translateY(0px)";
     document.getElementById('aa').style.transition = "1s";
         document.getElementById('aa').style.position = "fixed";
-        console.log(page.id);   
 }
 
 else {
 document.getElementById('aa').style.transform = "translateY(150px)";
 document.getElementById('aa').style.transition = "1s";
 document.getElementById('aa').style.position = "fixed";
-
-        console.log("case3");
 }
       
   });      
